@@ -1,0 +1,2456 @@
+CHIMERE CONFIGURATION CHECK
+Mon Mar  8 21:32:49 -03 2021
+ 
+Linux amanan 4.18.0-193.14.2.el8_2.x86_64 #1 SMP Sun Jul 26 03:54:29 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+ 
+----------------------------------------------------------------------------------------------
+                                       Compilers
+----------------------------------------------------------------------------------------------
+ 
+/usr/bin/gfortran
+GNU Fortran (GCC) 8.3.1 20191121 (Red Hat 8.3.1-5)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ 
+/usr/bin/gcc
+gcc (GCC) 8.3.1 20191121 (Red Hat 8.3.1-5)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ 
+/usr/bin/g++
+g++ (GCC) 8.3.1 20191121 (Red Hat 8.3.1-5)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ 
+ 
+----------------------------------------------------------------------------------------------
+                                       MPI
+----------------------------------------------------------------------------------------------
+ 
+/usr/bin/make
+GNU Make 4.2.1
+Built for x86_64-redhat-linux-gnu
+Copyright (C) 1988-2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+ 
+/home/sibarra/chimere2020/libs/bin
+                 Package: Open MPI sibarra@amanan Distribution
+                Open MPI: 4.1.0
+  Open MPI repo revision: v4.1.0
+   Open MPI release date: Dec 18, 2020
+                Open RTE: 4.1.0
+  Open RTE repo revision: v4.1.0
+   Open RTE release date: Dec 18, 2020
+                    OPAL: 4.1.0
+      OPAL repo revision: v4.1.0
+       OPAL release date: Dec 18, 2020
+                 MPI API: 3.1.0
+            Ident string: 4.1.0
+                  Prefix: /home/sibarra/chimere2020/libs
+ Configured architecture: x86_64-unknown-linux-gnu
+          Configure host: amanan
+           Configured by: sibarra
+           Configured on: Mon Mar  8 23:13:48 UTC 2021
+          Configure host: amanan
+  Configure command line: '--prefix=/home/sibarra/chimere2020/libs'
+                Built by: sibarra
+                Built on: Mon Mar  8 23:25:22 UTC 2021
+              Built host: amanan
+              C bindings: yes
+            C++ bindings: no
+             Fort mpif.h: yes (all)
+            Fort use mpi: yes (full: ignore TKR)
+       Fort use mpi size: deprecated-ompi-info-value
+        Fort use mpi_f08: yes
+ Fort mpi_f08 compliance: The mpi_f08 module is available, but due to limitations in the gfortran compiler and/or Open MPI, does not support the following: array subsections, direct passthru (where possible) to underlying Open MPI's C functionality
+  Fort mpi_f08 subarrays: no
+           Java bindings: no
+  Wrapper compiler rpath: runpath
+              C compiler: gcc
+     C compiler absolute: /usr/bin/gcc
+  C compiler family name: GNU
+      C compiler version: 8.3.1
+            C++ compiler: g++
+   C++ compiler absolute: /usr/bin/g++
+           Fort compiler: gfortran
+       Fort compiler abs: /usr/bin/gfortran
+         Fort ignore TKR: yes (!GCC$ ATTRIBUTES NO_ARG_CHECK ::)
+   Fort 08 assumed shape: yes
+      Fort optional args: yes
+          Fort INTERFACE: yes
+    Fort ISO_FORTRAN_ENV: yes
+       Fort STORAGE_SIZE: yes
+      Fort BIND(C) (all): yes
+      Fort ISO_C_BINDING: yes
+ Fort SUBROUTINE BIND(C): yes
+       Fort TYPE,BIND(C): yes
+ Fort T,BIND(C,name="a"): yes
+            Fort PRIVATE: yes
+          Fort PROTECTED: yes
+           Fort ABSTRACT: yes
+       Fort ASYNCHRONOUS: yes
+          Fort PROCEDURE: yes
+         Fort USE...ONLY: yes
+           Fort C_FUNLOC: yes
+ Fort f08 using wrappers: yes
+         Fort MPI_SIZEOF: yes
+             C profiling: yes
+           C++ profiling: no
+   Fort mpif.h profiling: yes
+  Fort use mpi profiling: yes
+   Fort use mpi_f08 prof: yes
+          C++ exceptions: no
+          Thread support: posix (MPI_THREAD_MULTIPLE: yes, OPAL support: yes, OMPI progress: no, ORTE progress: yes, Event lib: yes)
+           Sparse Groups: no
+  Internal debug support: no
+  MPI interface warnings: yes
+     MPI parameter check: runtime
+Memory profiling support: no
+Memory debugging support: no
+              dl support: yes
+   Heterogeneous support: no
+ mpirun default --prefix: no
+       MPI_WTIME support: native
+     Symbol vis. support: yes
+   Host topology support: yes
+            IPv6 support: no
+      MPI1 compatibility: no
+          MPI extensions: affinity, cuda, pcollreq
+   FT Checkpoint support: no (checkpoint thread: no)
+   C/R Enabled Debugging: no
+  MPI_MAX_PROCESSOR_NAME: 256
+    MPI_MAX_ERROR_STRING: 256
+     MPI_MAX_OBJECT_NAME: 64
+        MPI_MAX_INFO_KEY: 36
+        MPI_MAX_INFO_VAL: 256
+       MPI_MAX_PORT_NAME: 1024
+  MPI_MAX_DATAREP_STRING: 128
+ 
+/home/sibarra/chimere2020/libs/bin/mpif90
+GNU Fortran (GCC) 8.3.1 20191121 (Red Hat 8.3.1-5)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ 
+/home/sibarra/chimere2020/libs/bin/mpicc
+gcc (GCC) 8.3.1 20191121 (Red Hat 8.3.1-5)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ 
+/home/sibarra/chimere2020/libs/bin/mpirun
+mpirun (Open MPI) 4.1.0
+
+Report bugs to http://www.open-mpi.org/community/help/
+ 
+/home/sibarra/chimere2020/libs/lib
+total 164400
+-rw-r--r--  1 sibarra sibarra    32402 Mar  8 21:25 libblitz.a
+-rwxr-xr-x  1 sibarra sibarra      922 Mar  8 21:25 libblitz.la
+-rw-r--r--  1 sibarra sibarra 13923300 Mar  8 21:29 libgrib_api.a
+-rwxr-xr-x  1 sibarra sibarra     1006 Mar  8 21:29 libgrib_api.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so -> libgrib_api.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so.1 -> libgrib_api.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra  6633232 Mar  8 21:29 libgrib_api.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   499906 Mar  8 21:29 libgrib_api_f77.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f77.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so -> libgrib_api_f77.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so.1 -> libgrib_api_f77.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   352552 Mar  8 21:29 libgrib_api_f77.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   762050 Mar  8 21:29 libgrib_api_f90.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f90.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so -> libgrib_api_f90.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so.1 -> libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   478480 Mar  8 21:29 libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra     1081 Mar  8 20:45 libh5bzip2.la
+-rwxr-xr-x  1 sibarra sibarra   110168 Mar  8 20:45 libh5bzip2.so
+-rw-r--r--  1 sibarra sibarra 57499046 Mar  8 20:40 libhdf5.a
+-rwxr-xr-x  1 sibarra sibarra      994 Mar  8 20:40 libhdf5.la
+-rw-r--r--  1 sibarra sibarra     5015 Mar  8 20:40 libhdf5.settings
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so -> libhdf5.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so.200 -> libhdf5.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra 27068064 Mar  8 20:40 libhdf5.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  1136322 Mar  8 20:40 libhdf5_hl.a
+-rwxr-xr-x  1 sibarra sibarra     1061 Mar  8 20:40 libhdf5_hl.la
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so -> libhdf5_hl.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so.200 -> libhdf5_hl.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra   669520 Mar  8 20:40 libhdf5_hl.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  2977000 Mar  8 21:26 libjasper.a
+-rwxr-xr-x  1 sibarra sibarra      771 Mar  8 21:26 libjasper.la
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_dstore.la
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so -> libmca_common_dstore.so.1.0.2
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so.1 -> libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra    79440 Mar  8 20:26 libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra     1101 Mar  8 20:26 libmca_common_monitoring.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so -> libmca_common_monitoring.so.50.20.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so.50 -> libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra    34560 Mar  8 20:26 libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_ompio.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so -> libmca_common_ompio.so.41.29.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so.41 -> libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra    66200 Mar  8 20:26 libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra     1053 Mar  8 20:26 libmca_common_sm.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so -> libmca_common_sm.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so.40 -> libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    14224 Mar  8 20:26 libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1138 Mar  8 20:26 libmca_common_ucx.la
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so -> libmca_common_ucx.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so.40 -> libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    20024 Mar  8 20:26 libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1091 Mar  8 20:26 libmca_common_verbs.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so -> libmca_common_verbs.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so.40 -> libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    24304 Mar  8 20:26 libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1098 Mar  8 20:26 libmpi.la
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so -> libmpi.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so.40 -> libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1410832 Mar  8 20:26 libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1179 Mar  8 20:26 libmpi_mpifh.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so -> libmpi_mpifh.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so.40 -> libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   642408 Mar  8 20:26 libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1152 Mar  8 20:26 libmpi_usempi_ignore_tkr.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so -> libmpi_usempi_ignore_tkr.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40 -> libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    71600 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1250 Mar  8 20:26 libmpi_usempif08.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so -> libmpi_usempif08.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so.40 -> libmpi_usempif08.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   353256 Mar  8 20:26 libmpi_usempif08.so.40.30.0
+-rw-r--r--  1 sibarra sibarra  1576344 Mar  8 20:45 libnetcdf.a
+-rwxr-xr-x  1 sibarra sibarra     1231 Mar  8 20:45 libnetcdf.la
+-rw-r--r--  1 sibarra sibarra     1040 Mar  8 20:45 libnetcdf.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so -> libnetcdf.so.18.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so.18 -> libnetcdf.so.18.0.0
+-rwxr-xr-x  1 sibarra sibarra  1225088 Mar  8 20:45 libnetcdf.so.18.0.0
+-rw-r--r--  1 sibarra sibarra  2435606 Mar  8 20:55 libnetcdff.a
+-rwxr-xr-x  1 sibarra sibarra     1187 Mar  8 20:55 libnetcdff.la
+-rw-r--r--  1 sibarra sibarra     1048 Mar  8 20:55 libnetcdff.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so -> libnetcdff.so.7.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so.7 -> libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra  1659168 Mar  8 20:55 libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra     1029 Mar  8 20:26 libompitrace.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so -> libompitrace.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so.40 -> libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    18880 Mar  8 20:26 libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1028 Mar  8 20:26 libopen-pal.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so -> libopen-pal.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so.40 -> libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1574864 Mar  8 20:26 libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1078 Mar  8 20:26 libopen-rte.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so -> libopen-rte.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so.40 -> libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1024248 Mar  8 20:26 libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1161 Mar  8 20:26 liboshmem.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so -> liboshmem.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so.40 -> liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1080384 Mar  8 20:26 liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra 42275404 Mar  8 21:22 libpython3.9.a
+-rwxr-xr-x  1 sibarra sibarra    95322 Mar  8 20:26 mpi.mod
+-rwxr-xr-x  1 sibarra sibarra     5922 Mar  8 20:26 mpi_ext.mod
+-rwxr-xr-x  1 sibarra sibarra   119410 Mar  8 20:26 mpi_f08.mod
+-rwxr-xr-x  1 sibarra sibarra     1621 Mar  8 20:26 mpi_f08_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra     9935 Mar  8 20:26 mpi_f08_ext.mod
+-rwxr-xr-x  1 sibarra sibarra    50479 Mar  8 20:26 mpi_f08_interfaces.mod
+-rwxr-xr-x  1 sibarra sibarra     1997 Mar  8 20:26 mpi_f08_interfaces_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra    13872 Mar  8 20:26 mpi_f08_types.mod
+-rwxr-xr-x  1 sibarra sibarra     1212 Mar  8 20:26 ompi_monitoring_prof.la
+-rwxr-xr-x  1 sibarra sibarra    23040 Mar  8 20:26 ompi_monitoring_prof.so
+drwxrwxr-x  2 sibarra sibarra     8192 Mar  8 20:26 openmpi
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 21:29 pkgconfig
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 20:26 pmix
+-rwxr-xr-x  1 sibarra sibarra    50550 Mar  8 20:26 pmpi_f08_interfaces.mod
+drwxr-xr-x 36 sibarra sibarra     8192 Mar  8 21:22 python3.9
+ 
+/home/sibarra/chimere2020/libs/include
+total 1800
+-rw-r--r-- 1 sibarra sibarra  25488 Mar  8 20:40 H5ACpublic.h
+-rw-r--r-- 1 sibarra sibarra   5582 Mar  8 20:40 H5Apublic.h
+-rw-r--r-- 1 sibarra sibarra   1760 Mar  8 20:40 H5Cpublic.h
+-rw-r--r-- 1 sibarra sibarra   1931 Mar  8 20:40 H5DOpublic.h
+-rw-r--r-- 1 sibarra sibarra   2590 Mar  8 20:40 H5DSpublic.h
+-rw-r--r-- 1 sibarra sibarra   9023 Mar  8 20:40 H5Dpublic.h
+-rw-r--r-- 1 sibarra sibarra   1849 Mar  8 20:40 H5ESpublic.h
+-rw-r--r-- 1 sibarra sibarra  22322 Mar  8 20:40 H5Epubgen.h
+-rw-r--r-- 1 sibarra sibarra   9027 Mar  8 20:40 H5Epublic.h
+-rw-r--r-- 1 sibarra sibarra   1490 Mar  8 20:40 H5FDcore.h
+-rw-r--r-- 1 sibarra sibarra   1955 Mar  8 20:40 H5FDdirect.h
+-rw-r--r-- 1 sibarra sibarra   1506 Mar  8 20:40 H5FDfamily.h
+-rw-r--r-- 1 sibarra sibarra   3691 Mar  8 20:40 H5FDhdfs.h
+-rw-r--r-- 1 sibarra sibarra   3322 Mar  8 20:40 H5FDlog.h
+-rw-r--r-- 1 sibarra sibarra   2573 Mar  8 20:40 H5FDmpi.h
+-rw-r--r-- 1 sibarra sibarra   2440 Mar  8 20:40 H5FDmpio.h
+-rw-r--r-- 1 sibarra sibarra   1800 Mar  8 20:40 H5FDmulti.h
+-rw-r--r-- 1 sibarra sibarra  17115 Mar  8 20:40 H5FDpublic.h
+-rw-r--r-- 1 sibarra sibarra   3330 Mar  8 20:40 H5FDros3.h
+-rw-r--r-- 1 sibarra sibarra   1339 Mar  8 20:40 H5FDsec2.h
+-rw-r--r-- 1 sibarra sibarra   1368 Mar  8 20:40 H5FDstdio.h
+-rw-r--r-- 1 sibarra sibarra   1414 Mar  8 20:40 H5FDwindows.h
+-rw-r--r-- 1 sibarra sibarra  15294 Mar  8 20:40 H5Fpublic.h
+-rw-r--r-- 1 sibarra sibarra   7234 Mar  8 20:40 H5Gpublic.h
+-rw-r--r-- 1 sibarra sibarra   3274 Mar  8 20:40 H5IMpublic.h
+-rw-r--r-- 1 sibarra sibarra   5144 Mar  8 20:40 H5Ipublic.h
+-rw-r--r-- 1 sibarra sibarra   1362 Mar  8 20:40 H5LDpublic.h
+-rw-r--r-- 1 sibarra sibarra  14182 Mar  8 20:40 H5LTpublic.h
+-rw-r--r-- 1 sibarra sibarra  12358 Mar  8 20:40 H5Lpublic.h
+-rw-r--r-- 1 sibarra sibarra   1775 Mar  8 20:40 H5MMpublic.h
+-rw-r--r-- 1 sibarra sibarra   4750 Mar  8 20:40 H5Mpublic.h
+-rw-r--r-- 1 sibarra sibarra  15911 Mar  8 20:40 H5Opublic.h
+-rw-r--r-- 1 sibarra sibarra   1528 Mar  8 20:40 H5PLextern.h
+-rw-r--r-- 1 sibarra sibarra   2504 Mar  8 20:40 H5PLpublic.h
+-rw-r--r-- 1 sibarra sibarra   3861 Mar  8 20:40 H5PTpublic.h
+-rw-r--r-- 1 sibarra sibarra  30881 Mar  8 20:40 H5Ppublic.h
+-rw-r--r-- 1 sibarra sibarra   5989 Mar  8 20:40 H5Rpublic.h
+-rw-r--r-- 1 sibarra sibarra  10356 Mar  8 20:40 H5Spublic.h
+-rw-r--r-- 1 sibarra sibarra   8419 Mar  8 20:40 H5TBpublic.h
+-rw-r--r-- 1 sibarra sibarra  27421 Mar  8 20:40 H5Tpublic.h
+-rw-r--r-- 1 sibarra sibarra  26272 Mar  8 20:40 H5VLconnector.h
+-rw-r--r-- 1 sibarra sibarra  13372 Mar  8 20:40 H5VLconnector_passthru.h
+-rw-r--r-- 1 sibarra sibarra   7560 Mar  8 20:40 H5VLnative.h
+-rw-r--r-- 1 sibarra sibarra   1811 Mar  8 20:40 H5VLpassthru.h
+-rw-r--r-- 1 sibarra sibarra   3317 Mar  8 20:40 H5VLpublic.h
+-rw-r--r-- 1 sibarra sibarra  11246 Mar  8 20:40 H5Zpublic.h
+-rw-r--r-- 1 sibarra sibarra   9720 Mar  8 20:40 H5api_adpt.h
+-rw-r--r-- 1 sibarra sibarra 151496 Mar  8 20:40 H5overflow.h
+-rw-r--r-- 1 sibarra sibarra  20838 Mar  8 20:40 H5pubconf.h
+-rw-r--r-- 1 sibarra sibarra  12773 Mar  8 20:40 H5public.h
+-rw-r--r-- 1 sibarra sibarra  29221 Mar  8 20:40 H5version.h
+drwxrwxr-x 5 sibarra sibarra   4096 Mar  8 21:25 blitz
+-rw-r--r-- 1 sibarra sibarra  60542 Mar  8 21:29 grib_api.h
+-rw-r--r-- 1 sibarra sibarra  11147 Mar  8 21:29 grib_api.mod
+-rw-r--r-- 1 sibarra sibarra   3554 Mar  8 21:29 grib_api_f77.h
+-rw-r--r-- 1 sibarra sibarra    743 Mar  8 21:29 grib_api_version.h
+-rw-r--r-- 1 sibarra sibarra    573 Mar  8 21:29 grib_api_windef.h
+-rw-r--r-- 1 sibarra sibarra   3828 Mar  8 20:40 hdf5.h
+-rw-r--r-- 1 sibarra sibarra   1543 Mar  8 20:40 hdf5_hl.h
+drwxrwxr-x 2 sibarra sibarra   4096 Mar  8 21:26 jasper
+-rw-r--r-- 1 sibarra sibarra    597 Mar  8 20:26 mpi-ext.h
+-rw-r--r-- 1 sibarra sibarra 175790 Mar  8 20:26 mpi.h
+-rw-r--r-- 1 sibarra sibarra  16057 Mar  8 20:26 mpi_portable_platform.h
+-rw-r--r-- 1 sibarra sibarra   1796 Mar  8 20:26 mpif-c-constants-decl.h
+-rw-r--r-- 1 sibarra sibarra   2750 Mar  8 20:26 mpif-config.h
+-rw-r--r-- 1 sibarra sibarra  13316 Mar  8 20:26 mpif-constants.h
+-rw-r--r-- 1 sibarra sibarra    683 Mar  8 20:26 mpif-ext.h
+-rw-r--r-- 1 sibarra sibarra   1954 Mar  8 20:26 mpif-externals.h
+-rw-r--r-- 1 sibarra sibarra   8054 Mar  8 20:26 mpif-handles.h
+-rw-r--r-- 1 sibarra sibarra   2122 Mar  8 20:26 mpif-io-constants.h
+-rw-r--r-- 1 sibarra sibarra   1207 Mar  8 20:26 mpif-io-handles.h
+-rw-r--r-- 1 sibarra sibarra   3000 Mar  8 20:26 mpif-sentinels.h
+-rw-r--r-- 1 sibarra sibarra 105706 Mar  8 20:26 mpif-sizeof.h
+-rw-r--r-- 1 sibarra sibarra   2857 Mar  8 20:26 mpif.h
+drwxrwxr-x 2 sibarra sibarra     49 Mar  8 20:26 mpp
+-rw-r--r-- 1 sibarra sibarra  68231 Mar  8 20:45 netcdf.h
+-rw-r--r-- 1 sibarra sibarra  61393 Mar  8 20:55 netcdf.inc
+-rw-r--r-- 1 sibarra sibarra  22522 Mar  8 20:55 netcdf.mod
+-rw-r--r-- 1 sibarra sibarra  27215 Mar  8 20:55 netcdf4_f03.mod
+-rw-r--r-- 1 sibarra sibarra  26865 Mar  8 20:55 netcdf4_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   5559 Mar  8 20:55 netcdf4_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1703 Mar  8 20:45 netcdf_aux.h
+-rw-r--r-- 1 sibarra sibarra  12058 Mar  8 20:45 netcdf_dispatch.h
+-rw-r--r-- 1 sibarra sibarra  21971 Mar  8 20:55 netcdf_f03.mod
+-rw-r--r-- 1 sibarra sibarra   3847 Mar  8 20:45 netcdf_filter.h
+-rw-r--r-- 1 sibarra sibarra  24967 Mar  8 20:55 netcdf_fortv2_c_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1337 Mar  8 20:45 netcdf_mem.h
+-rw-r--r-- 1 sibarra sibarra   2597 Mar  8 20:45 netcdf_meta.h
+-rw-r--r-- 1 sibarra sibarra   5821 Mar  8 20:55 netcdf_nc_data.mod
+-rw-r--r-- 1 sibarra sibarra  21305 Mar  8 20:55 netcdf_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   9991 Mar  8 20:55 netcdf_nf_data.mod
+-rw-r--r-- 1 sibarra sibarra  11486 Mar  8 20:55 netcdf_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1636 Mar  8 20:45 netcdf_par.h
+drwxrwxr-x 3 sibarra sibarra     28 Mar  8 20:26 openmpi
+drwxrwxr-x 3 sibarra sibarra     55 Mar  8 20:26 openshmem
+-rw-r--r-- 1 sibarra sibarra 136521 Mar  8 20:26 pshmem.h
+-rw-r--r-- 1 sibarra sibarra  12251 Mar  8 20:26 pshmemx.h
+drwxr-xr-x 4 sibarra sibarra   4096 Mar  8 21:22 python3.9
+drwxrwxr-x 2 sibarra sibarra    240 Mar  8 21:25 random
+-rw-r--r-- 1 sibarra sibarra   1025 Mar  8 20:26 shmem-compat.h
+-rw-r--r-- 1 sibarra sibarra   1723 Mar  8 20:26 shmem.fh
+-rw-r--r-- 1 sibarra sibarra 137992 Mar  8 20:26 shmem.h
+-rw-r--r-- 1 sibarra sibarra  12771 Mar  8 20:26 shmemx.h
+-rw-r--r-- 1 sibarra sibarra    502 Mar  8 20:55 typesizes.mod
+ 
+----------------------------------------------------------------------------------------------
+                                       HDF5
+----------------------------------------------------------------------------------------------
+ 
+/home/sibarra/chimere2020/libs/lib
+total 164400
+-rw-r--r--  1 sibarra sibarra    32402 Mar  8 21:25 libblitz.a
+-rwxr-xr-x  1 sibarra sibarra      922 Mar  8 21:25 libblitz.la
+-rw-r--r--  1 sibarra sibarra 13923300 Mar  8 21:29 libgrib_api.a
+-rwxr-xr-x  1 sibarra sibarra     1006 Mar  8 21:29 libgrib_api.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so -> libgrib_api.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so.1 -> libgrib_api.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra  6633232 Mar  8 21:29 libgrib_api.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   499906 Mar  8 21:29 libgrib_api_f77.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f77.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so -> libgrib_api_f77.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so.1 -> libgrib_api_f77.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   352552 Mar  8 21:29 libgrib_api_f77.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   762050 Mar  8 21:29 libgrib_api_f90.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f90.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so -> libgrib_api_f90.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so.1 -> libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   478480 Mar  8 21:29 libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra     1081 Mar  8 20:45 libh5bzip2.la
+-rwxr-xr-x  1 sibarra sibarra   110168 Mar  8 20:45 libh5bzip2.so
+-rw-r--r--  1 sibarra sibarra 57499046 Mar  8 20:40 libhdf5.a
+-rwxr-xr-x  1 sibarra sibarra      994 Mar  8 20:40 libhdf5.la
+-rw-r--r--  1 sibarra sibarra     5015 Mar  8 20:40 libhdf5.settings
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so -> libhdf5.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so.200 -> libhdf5.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra 27068064 Mar  8 20:40 libhdf5.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  1136322 Mar  8 20:40 libhdf5_hl.a
+-rwxr-xr-x  1 sibarra sibarra     1061 Mar  8 20:40 libhdf5_hl.la
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so -> libhdf5_hl.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so.200 -> libhdf5_hl.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra   669520 Mar  8 20:40 libhdf5_hl.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  2977000 Mar  8 21:26 libjasper.a
+-rwxr-xr-x  1 sibarra sibarra      771 Mar  8 21:26 libjasper.la
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_dstore.la
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so -> libmca_common_dstore.so.1.0.2
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so.1 -> libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra    79440 Mar  8 20:26 libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra     1101 Mar  8 20:26 libmca_common_monitoring.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so -> libmca_common_monitoring.so.50.20.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so.50 -> libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra    34560 Mar  8 20:26 libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_ompio.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so -> libmca_common_ompio.so.41.29.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so.41 -> libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra    66200 Mar  8 20:26 libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra     1053 Mar  8 20:26 libmca_common_sm.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so -> libmca_common_sm.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so.40 -> libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    14224 Mar  8 20:26 libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1138 Mar  8 20:26 libmca_common_ucx.la
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so -> libmca_common_ucx.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so.40 -> libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    20024 Mar  8 20:26 libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1091 Mar  8 20:26 libmca_common_verbs.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so -> libmca_common_verbs.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so.40 -> libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    24304 Mar  8 20:26 libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1098 Mar  8 20:26 libmpi.la
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so -> libmpi.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so.40 -> libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1410832 Mar  8 20:26 libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1179 Mar  8 20:26 libmpi_mpifh.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so -> libmpi_mpifh.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so.40 -> libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   642408 Mar  8 20:26 libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1152 Mar  8 20:26 libmpi_usempi_ignore_tkr.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so -> libmpi_usempi_ignore_tkr.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40 -> libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    71600 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1250 Mar  8 20:26 libmpi_usempif08.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so -> libmpi_usempif08.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so.40 -> libmpi_usempif08.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   353256 Mar  8 20:26 libmpi_usempif08.so.40.30.0
+-rw-r--r--  1 sibarra sibarra  1576344 Mar  8 20:45 libnetcdf.a
+-rwxr-xr-x  1 sibarra sibarra     1231 Mar  8 20:45 libnetcdf.la
+-rw-r--r--  1 sibarra sibarra     1040 Mar  8 20:45 libnetcdf.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so -> libnetcdf.so.18.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so.18 -> libnetcdf.so.18.0.0
+-rwxr-xr-x  1 sibarra sibarra  1225088 Mar  8 20:45 libnetcdf.so.18.0.0
+-rw-r--r--  1 sibarra sibarra  2435606 Mar  8 20:55 libnetcdff.a
+-rwxr-xr-x  1 sibarra sibarra     1187 Mar  8 20:55 libnetcdff.la
+-rw-r--r--  1 sibarra sibarra     1048 Mar  8 20:55 libnetcdff.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so -> libnetcdff.so.7.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so.7 -> libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra  1659168 Mar  8 20:55 libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra     1029 Mar  8 20:26 libompitrace.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so -> libompitrace.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so.40 -> libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    18880 Mar  8 20:26 libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1028 Mar  8 20:26 libopen-pal.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so -> libopen-pal.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so.40 -> libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1574864 Mar  8 20:26 libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1078 Mar  8 20:26 libopen-rte.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so -> libopen-rte.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so.40 -> libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1024248 Mar  8 20:26 libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1161 Mar  8 20:26 liboshmem.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so -> liboshmem.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so.40 -> liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1080384 Mar  8 20:26 liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra 42275404 Mar  8 21:22 libpython3.9.a
+-rwxr-xr-x  1 sibarra sibarra    95322 Mar  8 20:26 mpi.mod
+-rwxr-xr-x  1 sibarra sibarra     5922 Mar  8 20:26 mpi_ext.mod
+-rwxr-xr-x  1 sibarra sibarra   119410 Mar  8 20:26 mpi_f08.mod
+-rwxr-xr-x  1 sibarra sibarra     1621 Mar  8 20:26 mpi_f08_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra     9935 Mar  8 20:26 mpi_f08_ext.mod
+-rwxr-xr-x  1 sibarra sibarra    50479 Mar  8 20:26 mpi_f08_interfaces.mod
+-rwxr-xr-x  1 sibarra sibarra     1997 Mar  8 20:26 mpi_f08_interfaces_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra    13872 Mar  8 20:26 mpi_f08_types.mod
+-rwxr-xr-x  1 sibarra sibarra     1212 Mar  8 20:26 ompi_monitoring_prof.la
+-rwxr-xr-x  1 sibarra sibarra    23040 Mar  8 20:26 ompi_monitoring_prof.so
+drwxrwxr-x  2 sibarra sibarra     8192 Mar  8 20:26 openmpi
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 21:29 pkgconfig
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 20:26 pmix
+-rwxr-xr-x  1 sibarra sibarra    50550 Mar  8 20:26 pmpi_f08_interfaces.mod
+drwxr-xr-x 36 sibarra sibarra     8192 Mar  8 21:22 python3.9
+ 
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.12.0
+                  Configured on: Mon Mar  8 20:33:19 -03 2021
+                  Configured by: sibarra@amanan
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux amanan 4.18.0-193.14.2.el8_2.x86_64 #1 SMP Sun Jul 26 03:54:29 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+                       Byte sex: little-endian
+             Installation point: /home/sibarra/chimere2020/libs
+
+Compiling Options:
+------------------
+                     Build Mode: debug
+              Debugging Symbols: yes
+                        Asserts: yes
+                      Profiling: no
+             Optimization Level: debug
+
+Linking Options:
+----------------
+                      Libraries: static, shared
+  Statically Linked Executables: 
+                        LDFLAGS: -L/home/sibarra/chimere2020/libs/lib
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+                Extra libraries: -lz -ldl -lm 
+                       Archiver: ar
+                       AR_FLAGS: cr
+                         Ranlib: ranlib
+
+Languages:
+----------
+                              C: yes
+                     C Compiler: /home/sibarra/chimere2020/libs/bin/mpicc ( Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux built with gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC))
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_GNU_SOURCE -D_POSIX_C_SOURCE=200809L   -UNDEBUG -DH5AC_DEBUG -DH5B2_DEBUG -DH5CX_DEBUG -DH5D_DEBUG -DH5F_DEBUG -DH5HL_DEBUG -DH5I_DEBUG -DH5O_DEBUG -DH5S_DEBUG -DH5ST_DEBUG -DH5T_DEBUG -DH5Z_DEBUG -DH5_DEBUG_API
+                    AM_CPPFLAGS: 
+                        C Flags: 
+                     H5 C Flags:  -std=c99  -Wall -Wcast-qual -Wconversion -Wextra -Wfloat-equal -Wformat=2 -Winit-self -Winvalid-pch -Wmissing-include-dirs -Wno-c++-compat -Wno-format-nonliteral -Wshadow -Wundef -Wwrite-strings -pedantic -Wbad-function-cast -Wcast-align -Wdeclaration-after-statement -Wdisabled-optimization -Wmissing-declarations -Wmissing-prototypes -Wnested-externs -Wold-style-definition -Wpacked -Wredundant-decls -Wstrict-prototypes -Wswitch-enum -Wswitch-default -Wunused-macros -Wunsafe-loop-optimizations -Wlogical-op -Wlarger-than=2560 -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wdate-time -Warray-bounds=2 -Wc99-c11-compat -Wnull-dereference -Wunused-const-variable -Wduplicated-cond -Whsa -Wnormalized -Walloc-zero -Walloca -Wduplicated-branches -Wformat-overflow=2 -Wformat-truncation=2 -Wimplicit-fallthrough=5 -Wrestrict -Wattribute-alias -Wcast-align=strict -Wshift-overflow=2 -ftrapv -fno-common -g -fno-omit-frame-pointer -Wno-aggregate-return -Wno-inline -Wno-missing-format-attribute -Wno-missing-noreturn -Wno-suggest-attribute=const -Wno-suggest-attribute=pure -Wno-suggest-attribute=noreturn -Wno-suggest-attribute=format -Wno-suggest-attribute=cold -Wno-suggest-attribute=malloc -Og
+                     AM C Flags: 
+               Shared C Library: yes
+               Static C Library: yes
+
+
+                        Fortran: no
+
+                            C++: no
+
+                           Java: no
+
+
+Features:
+---------
+                   Parallel HDF5: yes
+Parallel Filtered Dataset Writes: yes
+              Large Parallel I/O: yes
+              High-level library: yes
+                Build HDF5 Tests: yes
+                Build HDF5 Tools: yes
+                    Threadsafety: no
+             Default API mapping: v112
+  With deprecated public symbols: yes
+          I/O filters (external): deflate(zlib)
+                             MPE: 
+                   Map (H5M) API: no
+                      Direct VFD: no
+              (Read-Only) S3 VFD: no
+            (Read-Only) HDFS VFD: no
+                         dmalloc: no
+  Packages w/ extra debug output: AC,B2,CX,D,F,HL,I,O,S,ST,T,Z
+                     API tracing: yes
+            Using memory checker: no
+ Memory allocation sanity checks: yes
+          Function stack tracing: no
+       Strict file format checks: yes
+    Optimization instrumentation: yes
+# NetCDF C Configuration Summary
+==============================
+
+# General
+-------
+NetCDF Version:		4.7.4
+Dispatch Version:       2
+Configured On:		Mon Mar  8 20:42:49 -03 2021
+Host System:		x86_64-pc-linux-gnu
+Build Directory: 	/home/sibarra/chimere2020/tarlibs/netcdf-c-4.7.4
+Install Prefix:         /home/sibarra/chimere2020/libs
+
+# Compiling Options
+-----------------
+C Compiler:		/home/sibarra/chimere2020/libs/bin/mpicc
+CFLAGS:			
+CPPFLAGS:		
+LDFLAGS:		-L/home/sibarra/chimere2020/libs/lib
+AM_CFLAGS:		
+AM_CPPFLAGS:		
+AM_LDFLAGS:		
+Shared Library:		yes
+Static Library:		yes
+Extra libraries:	-lhdf5_hl -lhdf5 -lm -ldl -lz 
+
+# Features
+--------
+NetCDF-2 API:		yes
+HDF4 Support:		no
+HDF5 Support:		yes
+NetCDF-4 API:		yes
+NC-4 Parallel Support:	yes
+PnetCDF Support:	no
+DAP2 Support:		no
+DAP4 Support:		no
+Byte-Range Support:	no
+Diskless Support:	yes
+MMap Support:		no
+JNA Support:		no
+CDF5 Support:		yes
+ERANGE Fill Support:	no
+Relaxed Boundary Check:	yes
+SZIP Support:           no
+SZIP Write Support:     no
+Parallel Filters:       yes
+# NetCDF Fortran Configuration Summary
+==============================
+
+# General
+-------
+Library Version:		4.5.3
+Configured On:		        Mon Mar  8 20:54:41 -03 2021
+Host System:		        x86_64-pc-linux-gnu
+Build Directory: 	        /home/sibarra/chimere2020/tarlibs/netcdf-fortran-4.5.3
+Install Prefix:                 /home/sibarra/chimere2020/libs
+
+# Compiling Options
+-----------------
+Fortran Compiler:               /usr/bin/gfortran
+FFLAGS:                         -g -O2
+LDFLAGS:		        -L/home/sibarra/chimere2020/libs/lib
+AM_LDFLAGS:                     
+Shared Library:		        yes
+Static Library:		        yes
+Extra libraries:	        -lnetcdf -ldl -lm 
+
+# Features
+--------
+F03:                            yes
+Dap Support:                    no
+Logging Support:                yes
+NetCDF-2 API:                   yes
+NetCDF-4 API:                   yes
+CDF5 Support:                   yes
+Parallel IO:                    yes
+NetCDF4 Parallel IO:            yes
+PnetCDF Parallel IO:            no
+SZIP Write Support:             no
+ 
+/home/sibarra/chimere2020/libs/include
+-rw-r--r-- 1 sibarra sibarra  25488 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5ACpublic.h
+-rw-r--r-- 1 sibarra sibarra   5582 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Apublic.h
+-rw-r--r-- 1 sibarra sibarra   1760 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Cpublic.h
+-rw-r--r-- 1 sibarra sibarra   1931 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5DOpublic.h
+-rw-r--r-- 1 sibarra sibarra   2590 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5DSpublic.h
+-rw-r--r-- 1 sibarra sibarra   9023 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Dpublic.h
+-rw-r--r-- 1 sibarra sibarra   1849 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5ESpublic.h
+-rw-r--r-- 1 sibarra sibarra  22322 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Epubgen.h
+-rw-r--r-- 1 sibarra sibarra   9027 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Epublic.h
+-rw-r--r-- 1 sibarra sibarra   1490 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDcore.h
+-rw-r--r-- 1 sibarra sibarra   1955 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDdirect.h
+-rw-r--r-- 1 sibarra sibarra   1506 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDfamily.h
+-rw-r--r-- 1 sibarra sibarra   3691 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDhdfs.h
+-rw-r--r-- 1 sibarra sibarra   3322 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDlog.h
+-rw-r--r-- 1 sibarra sibarra   2573 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDmpi.h
+-rw-r--r-- 1 sibarra sibarra   2440 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDmpio.h
+-rw-r--r-- 1 sibarra sibarra   1800 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDmulti.h
+-rw-r--r-- 1 sibarra sibarra  17115 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDpublic.h
+-rw-r--r-- 1 sibarra sibarra   3330 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDros3.h
+-rw-r--r-- 1 sibarra sibarra   1339 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDsec2.h
+-rw-r--r-- 1 sibarra sibarra   1368 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDstdio.h
+-rw-r--r-- 1 sibarra sibarra   1414 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5FDwindows.h
+-rw-r--r-- 1 sibarra sibarra  15294 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Fpublic.h
+-rw-r--r-- 1 sibarra sibarra   7234 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Gpublic.h
+-rw-r--r-- 1 sibarra sibarra   3274 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5IMpublic.h
+-rw-r--r-- 1 sibarra sibarra   5144 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Ipublic.h
+-rw-r--r-- 1 sibarra sibarra   1362 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5LDpublic.h
+-rw-r--r-- 1 sibarra sibarra  14182 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5LTpublic.h
+-rw-r--r-- 1 sibarra sibarra  12358 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Lpublic.h
+-rw-r--r-- 1 sibarra sibarra   1775 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5MMpublic.h
+-rw-r--r-- 1 sibarra sibarra   4750 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Mpublic.h
+-rw-r--r-- 1 sibarra sibarra  15911 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Opublic.h
+-rw-r--r-- 1 sibarra sibarra   1528 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5PLextern.h
+-rw-r--r-- 1 sibarra sibarra   2504 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5PLpublic.h
+-rw-r--r-- 1 sibarra sibarra   3861 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5PTpublic.h
+-rw-r--r-- 1 sibarra sibarra  30881 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Ppublic.h
+-rw-r--r-- 1 sibarra sibarra   5989 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Rpublic.h
+-rw-r--r-- 1 sibarra sibarra  10356 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Spublic.h
+-rw-r--r-- 1 sibarra sibarra   8419 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5TBpublic.h
+-rw-r--r-- 1 sibarra sibarra  27421 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Tpublic.h
+-rw-r--r-- 1 sibarra sibarra  26272 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5VLconnector.h
+-rw-r--r-- 1 sibarra sibarra  13372 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5VLconnector_passthru.h
+-rw-r--r-- 1 sibarra sibarra   7560 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5VLnative.h
+-rw-r--r-- 1 sibarra sibarra   1811 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5VLpassthru.h
+-rw-r--r-- 1 sibarra sibarra   3317 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5VLpublic.h
+-rw-r--r-- 1 sibarra sibarra  11246 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5Zpublic.h
+-rw-r--r-- 1 sibarra sibarra   9720 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5api_adpt.h
+-rw-r--r-- 1 sibarra sibarra 151496 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5overflow.h
+-rw-r--r-- 1 sibarra sibarra  20838 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5pubconf.h
+-rw-r--r-- 1 sibarra sibarra  12773 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5public.h
+-rw-r--r-- 1 sibarra sibarra  29221 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/H5version.h
+-rw-r--r-- 1 sibarra sibarra  60542 Mar  8 21:29 /home/sibarra/chimere2020/libs/include/grib_api.h
+-rw-r--r-- 1 sibarra sibarra  11147 Mar  8 21:29 /home/sibarra/chimere2020/libs/include/grib_api.mod
+-rw-r--r-- 1 sibarra sibarra   3554 Mar  8 21:29 /home/sibarra/chimere2020/libs/include/grib_api_f77.h
+-rw-r--r-- 1 sibarra sibarra    743 Mar  8 21:29 /home/sibarra/chimere2020/libs/include/grib_api_version.h
+-rw-r--r-- 1 sibarra sibarra    573 Mar  8 21:29 /home/sibarra/chimere2020/libs/include/grib_api_windef.h
+-rw-r--r-- 1 sibarra sibarra   3828 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/hdf5.h
+-rw-r--r-- 1 sibarra sibarra   1543 Mar  8 20:40 /home/sibarra/chimere2020/libs/include/hdf5_hl.h
+-rw-r--r-- 1 sibarra sibarra    597 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpi-ext.h
+-rw-r--r-- 1 sibarra sibarra 175790 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpi.h
+-rw-r--r-- 1 sibarra sibarra  16057 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpi_portable_platform.h
+-rw-r--r-- 1 sibarra sibarra   1796 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-c-constants-decl.h
+-rw-r--r-- 1 sibarra sibarra   2750 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-config.h
+-rw-r--r-- 1 sibarra sibarra  13316 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-constants.h
+-rw-r--r-- 1 sibarra sibarra    683 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-ext.h
+-rw-r--r-- 1 sibarra sibarra   1954 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-externals.h
+-rw-r--r-- 1 sibarra sibarra   8054 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-handles.h
+-rw-r--r-- 1 sibarra sibarra   2122 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-io-constants.h
+-rw-r--r-- 1 sibarra sibarra   1207 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-io-handles.h
+-rw-r--r-- 1 sibarra sibarra   3000 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-sentinels.h
+-rw-r--r-- 1 sibarra sibarra 105706 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif-sizeof.h
+-rw-r--r-- 1 sibarra sibarra   2857 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/mpif.h
+-rw-r--r-- 1 sibarra sibarra  68231 Mar  8 20:45 /home/sibarra/chimere2020/libs/include/netcdf.h
+-rw-r--r-- 1 sibarra sibarra  61393 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf.inc
+-rw-r--r-- 1 sibarra sibarra  22522 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf.mod
+-rw-r--r-- 1 sibarra sibarra  27215 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_f03.mod
+-rw-r--r-- 1 sibarra sibarra  26865 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   5559 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1703 Mar  8 20:45 /home/sibarra/chimere2020/libs/include/netcdf_aux.h
+-rw-r--r-- 1 sibarra sibarra  12058 Mar  8 20:45 /home/sibarra/chimere2020/libs/include/netcdf_dispatch.h
+-rw-r--r-- 1 sibarra sibarra  21971 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_f03.mod
+-rw-r--r-- 1 sibarra sibarra   3847 Mar  8 20:45 /home/sibarra/chimere2020/libs/include/netcdf_filter.h
+-rw-r--r-- 1 sibarra sibarra  24967 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_fortv2_c_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1337 Mar  8 20:45 /home/sibarra/chimere2020/libs/include/netcdf_mem.h
+-rw-r--r-- 1 sibarra sibarra   2597 Mar  8 20:45 /home/sibarra/chimere2020/libs/include/netcdf_meta.h
+-rw-r--r-- 1 sibarra sibarra   5821 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nc_data.mod
+-rw-r--r-- 1 sibarra sibarra  21305 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   9991 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nf_data.mod
+-rw-r--r-- 1 sibarra sibarra  11486 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1636 Mar  8 20:45 /home/sibarra/chimere2020/libs/include/netcdf_par.h
+-rw-r--r-- 1 sibarra sibarra 136521 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/pshmem.h
+-rw-r--r-- 1 sibarra sibarra  12251 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/pshmemx.h
+-rw-r--r-- 1 sibarra sibarra   1025 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/shmem-compat.h
+-rw-r--r-- 1 sibarra sibarra   1723 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/shmem.fh
+-rw-r--r-- 1 sibarra sibarra 137992 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/shmem.h
+-rw-r--r-- 1 sibarra sibarra  12771 Mar  8 20:26 /home/sibarra/chimere2020/libs/include/shmemx.h
+-rw-r--r-- 1 sibarra sibarra    502 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/typesizes.mod
+
+/home/sibarra/chimere2020/libs/include/blitz:
+total 560
+drwxrwxr-x 2 sibarra sibarra  4096 Mar  8 21:25 array
+-rw-r--r-- 1 sibarra sibarra 97857 Mar  8 21:25 array-impl.h
+-rw-r--r-- 1 sibarra sibarra  1321 Mar  8 21:25 array.cc
+-rw-r--r-- 1 sibarra sibarra  1418 Mar  8 21:25 array.h
+-rw-r--r-- 1 sibarra sibarra  7429 Mar  8 21:25 bench.cc
+-rw-r--r-- 1 sibarra sibarra  3762 Mar  8 21:25 bench.h
+-rw-r--r-- 1 sibarra sibarra 13864 Mar  8 21:25 benchext.cc
+-rw-r--r-- 1 sibarra sibarra  4095 Mar  8 21:25 benchext.h
+-rw-r--r-- 1 sibarra sibarra  6432 Mar  8 21:25 blitz.h
+-rw-r--r-- 1 sibarra sibarra  3417 Mar  8 21:25 bounds.h
+-rw-r--r-- 1 sibarra sibarra  2812 Mar  8 21:25 bzconfig.h
+-rw-r--r-- 1 sibarra sibarra  7740 Mar  8 21:25 bzdebug.h
+-rw-r--r-- 1 sibarra sibarra  4251 Mar  8 21:25 compiler.h
+-rw-r--r-- 1 sibarra sibarra   588 Mar  8 21:25 constpointerstack.h
+-rw-r--r-- 1 sibarra sibarra  2334 Mar  8 21:25 et-forward.h
+-rw-r--r-- 1 sibarra sibarra  1730 Mar  8 21:25 etbase.h
+-rw-r--r-- 1 sibarra sibarra 31046 Mar  8 21:25 funcs.h
+-rw-r--r-- 1 sibarra sibarra 47181 Mar  8 21:25 globeval.cc
+drwxrwxr-x 2 sibarra sibarra    32 Mar  8 21:25 gnu
+-rw-r--r-- 1 sibarra sibarra  9093 Mar  8 21:25 indexexpr.h
+-rw-r--r-- 1 sibarra sibarra    79 Mar  8 21:25 indexmap-forward.h
+-rw-r--r-- 1 sibarra sibarra  4968 Mar  8 21:25 levicivita.h
+-rw-r--r-- 1 sibarra sibarra 14192 Mar  8 21:25 limits-hack.h
+-rw-r--r-- 1 sibarra sibarra  3062 Mar  8 21:25 listinit.h
+-rw-r--r-- 1 sibarra sibarra  4989 Mar  8 21:25 memblock.cc
+-rw-r--r-- 1 sibarra sibarra 15287 Mar  8 21:25 memblock.h
+drwxrwxr-x 2 sibarra sibarra   173 Mar  8 21:25 meta
+-rw-r--r-- 1 sibarra sibarra  1922 Mar  8 21:25 minmax.h
+-rw-r--r-- 1 sibarra sibarra  6843 Mar  8 21:25 numinquire.h
+-rw-r--r-- 1 sibarra sibarra  3861 Mar  8 21:25 numtrait.h
+-rw-r--r-- 1 sibarra sibarra  8871 Mar  8 21:25 ops.h
+-rw-r--r-- 1 sibarra sibarra  2239 Mar  8 21:25 prettyprint.h
+-rw-r--r-- 1 sibarra sibarra  5462 Mar  8 21:25 promote.h
+-rw-r--r-- 1 sibarra sibarra   659 Mar  8 21:25 range.cc
+-rw-r--r-- 1 sibarra sibarra  9599 Mar  8 21:25 range.h
+-rw-r--r-- 1 sibarra sibarra   973 Mar  8 21:25 ranks.h
+-rw-r--r-- 1 sibarra sibarra 11987 Mar  8 21:25 reduce.h
+-rw-r--r-- 1 sibarra sibarra  2607 Mar  8 21:25 shapecheck.h
+-rw-r--r-- 1 sibarra sibarra  2541 Mar  8 21:25 simdtypes.h
+-rw-r--r-- 1 sibarra sibarra  1898 Mar  8 21:25 tau.h
+-rw-r--r-- 1 sibarra sibarra  4423 Mar  8 21:25 timer.h
+-rw-r--r-- 1 sibarra sibarra  4221 Mar  8 21:25 tinymat2.cc
+-rw-r--r-- 1 sibarra sibarra 11136 Mar  8 21:25 tinymat2.h
+-rw-r--r-- 1 sibarra sibarra  3175 Mar  8 21:25 tinymat2io.cc
+-rw-r--r-- 1 sibarra sibarra  4106 Mar  8 21:25 tinyvec2.cc
+-rw-r--r-- 1 sibarra sibarra 13098 Mar  8 21:25 tinyvec2.h
+-rw-r--r-- 1 sibarra sibarra  2874 Mar  8 21:25 tinyvec2io.cc
+-rw-r--r-- 1 sibarra sibarra 13911 Mar  8 21:25 tm2fastiter.h
+-rw-r--r-- 1 sibarra sibarra  6784 Mar  8 21:25 tmevaluate.h
+-rw-r--r-- 1 sibarra sibarra  3943 Mar  8 21:25 traversal.cc
+-rw-r--r-- 1 sibarra sibarra  3998 Mar  8 21:25 traversal.h
+-rw-r--r-- 1 sibarra sibarra  4810 Mar  8 21:25 tuning.h
+-rw-r--r-- 1 sibarra sibarra 14194 Mar  8 21:25 tv2fastiter.h
+-rw-r--r-- 1 sibarra sibarra  1808 Mar  8 21:25 tvcross.h
+-rw-r--r-- 1 sibarra sibarra  2849 Mar  8 21:25 tvecglobs.h
+-rw-r--r-- 1 sibarra sibarra  6885 Mar  8 21:25 tvevaluate.h
+-rw-r--r-- 1 sibarra sibarra  2751 Mar  8 21:25 update.h
+-rw-r--r-- 1 sibarra sibarra  3716 Mar  8 21:15 vector2.h
+-rw-r--r-- 1 sibarra sibarra   138 Mar  8 21:25 wrap-climits.h
+
+/home/sibarra/chimere2020/libs/include/jasper:
+total 172
+-rw-r--r-- 1 sibarra sibarra  8058 Mar  8 21:26 jas_cm.h
+-rw-r--r-- 1 sibarra sibarra  4751 Mar  8 21:26 jas_config.h
+-rw-r--r-- 1 sibarra sibarra  3706 Mar  8 21:26 jas_config2.h
+-rw-r--r-- 1 sibarra sibarra  4238 Mar  8 21:26 jas_debug.h
+-rw-r--r-- 1 sibarra sibarra 13264 Mar  8 21:26 jas_fix.h
+-rw-r--r-- 1 sibarra sibarra  4626 Mar  8 21:26 jas_getopt.h
+-rw-r--r-- 1 sibarra sibarra 15305 Mar  8 21:26 jas_icc.h
+-rw-r--r-- 1 sibarra sibarra 18602 Mar  8 21:26 jas_image.h
+-rw-r--r-- 1 sibarra sibarra  3415 Mar  8 21:26 jas_init.h
+-rw-r--r-- 1 sibarra sibarra  4550 Mar  8 21:26 jas_malloc.h
+-rw-r--r-- 1 sibarra sibarra  4353 Mar  8 21:26 jas_math.h
+-rw-r--r-- 1 sibarra sibarra 10185 Mar  8 21:26 jas_seq.h
+-rw-r--r-- 1 sibarra sibarra 14825 Mar  8 21:26 jas_stream.h
+-rw-r--r-- 1 sibarra sibarra  3763 Mar  8 21:26 jas_string.h
+-rw-r--r-- 1 sibarra sibarra  3621 Mar  8 21:26 jas_tmr.h
+-rw-r--r-- 1 sibarra sibarra  5271 Mar  8 21:26 jas_tvp.h
+-rw-r--r-- 1 sibarra sibarra  6676 Mar  8 21:26 jas_types.h
+-rw-r--r-- 1 sibarra sibarra  4867 Mar  8 21:26 jas_version.h
+-rw-r--r-- 1 sibarra sibarra  3697 Mar  8 21:26 jasper.h
+
+/home/sibarra/chimere2020/libs/include/mpp:
+total 0
+lrwxrwxrwx 1 sibarra sibarra 11 Mar  8 20:26 shmem.fh -> ../shmem.fh
+lrwxrwxrwx 1 sibarra sibarra 10 Mar  8 20:26 shmem.h -> ../shmem.h
+
+/home/sibarra/chimere2020/libs/include/openmpi:
+total 0
+drwxrwxr-x 2 sibarra sibarra 166 Mar  8 20:26 mpiext
+
+/home/sibarra/chimere2020/libs/include/openshmem:
+total 4
+drwxrwxr-x 2 sibarra sibarra   97 Mar  8 20:26 oshmem
+-rw-r--r-- 1 sibarra sibarra 2001 Mar  8 20:26 oshmem_config.h
+
+/home/sibarra/chimere2020/libs/include/python3.9:
+total 708
+-rw-r--r-- 1 sibarra sibarra 26193 Mar  8 21:22 Python-ast.h
+-rw-r--r-- 1 sibarra sibarra  3690 Mar  8 21:22 Python.h
+-rw-r--r-- 1 sibarra sibarra 30477 Mar  8 21:22 abstract.h
+-rw-r--r-- 1 sibarra sibarra  1224 Mar  8 21:22 asdl.h
+-rw-r--r-- 1 sibarra sibarra   947 Mar  8 21:22 ast.h
+-rw-r--r-- 1 sibarra sibarra   468 Mar  8 21:22 bitset.h
+-rw-r--r-- 1 sibarra sibarra   264 Mar  8 21:22 bltinmodule.h
+-rw-r--r-- 1 sibarra sibarra   885 Mar  8 21:22 boolobject.h
+-rw-r--r-- 1 sibarra sibarra  1484 Mar  8 21:22 bytearrayobject.h
+-rw-r--r-- 1 sibarra sibarra  3048 Mar  8 21:22 bytesobject.h
+-rw-r--r-- 1 sibarra sibarra   712 Mar  8 21:22 cellobject.h
+-rw-r--r-- 1 sibarra sibarra  5954 Mar  8 21:22 ceval.h
+-rw-r--r-- 1 sibarra sibarra  1657 Mar  8 21:22 classobject.h
+-rw-r--r-- 1 sibarra sibarra   318 Mar  8 21:22 code.h
+-rw-r--r-- 1 sibarra sibarra  6793 Mar  8 21:22 codecs.h
+-rw-r--r-- 1 sibarra sibarra  3778 Mar  8 21:22 compile.h
+-rw-r--r-- 1 sibarra sibarra  1806 Mar  8 21:22 complexobject.h
+-rw-r--r-- 1 sibarra sibarra  1962 Mar  8 21:22 context.h
+drwxr-xr-x 2 sibarra sibarra  4096 Mar  8 21:22 cpython
+-rw-r--r-- 1 sibarra sibarra  9255 Mar  8 21:22 datetime.h
+-rw-r--r-- 1 sibarra sibarra  3019 Mar  8 21:22 descrobject.h
+-rw-r--r-- 1 sibarra sibarra  3715 Mar  8 21:22 dictobject.h
+-rw-r--r-- 1 sibarra sibarra 22469 Mar  8 21:22 dynamic_annotations.h
+-rw-r--r-- 1 sibarra sibarra   253 Mar  8 21:22 enumobject.h
+-rw-r--r-- 1 sibarra sibarra  1624 Mar  8 21:22 errcode.h
+-rw-r--r-- 1 sibarra sibarra  1209 Mar  8 21:22 eval.h
+-rw-r--r-- 1 sibarra sibarra  1098 Mar  8 21:22 exports.h
+-rw-r--r-- 1 sibarra sibarra  1342 Mar  8 21:22 fileobject.h
+-rw-r--r-- 1 sibarra sibarra   597 Mar  8 21:22 fileutils.h
+-rw-r--r-- 1 sibarra sibarra  4360 Mar  8 21:22 floatobject.h
+-rw-r--r-- 1 sibarra sibarra   337 Mar  8 21:22 frameobject.h
+-rw-r--r-- 1 sibarra sibarra  4057 Mar  8 21:22 funcobject.h
+-rw-r--r-- 1 sibarra sibarra   334 Mar  8 21:22 genericaliasobject.h
+-rw-r--r-- 1 sibarra sibarra  3525 Mar  8 21:22 genobject.h
+-rw-r--r-- 1 sibarra sibarra  2118 Mar  8 21:22 graminit.h
+-rw-r--r-- 1 sibarra sibarra  1821 Mar  8 21:22 grammar.h
+-rw-r--r-- 1 sibarra sibarra  3026 Mar  8 21:22 import.h
+drwxr-xr-x 2 sibarra sibarra  4096 Mar  8 21:22 internal
+-rw-r--r-- 1 sibarra sibarra   334 Mar  8 21:22 interpreteridobject.h
+-rw-r--r-- 1 sibarra sibarra   861 Mar  8 21:22 intrcheck.h
+-rw-r--r-- 1 sibarra sibarra   521 Mar  8 21:22 iterobject.h
+-rw-r--r-- 1 sibarra sibarra  1781 Mar  8 21:22 listobject.h
+-rw-r--r-- 1 sibarra sibarra  3799 Mar  8 21:22 longintrepr.h
+-rw-r--r-- 1 sibarra sibarra  9513 Mar  8 21:22 longobject.h
+-rw-r--r-- 1 sibarra sibarra   803 Mar  8 21:22 marshal.h
+-rw-r--r-- 1 sibarra sibarra  2764 Mar  8 21:22 memoryobject.h
+-rw-r--r-- 1 sibarra sibarra  3775 Mar  8 21:22 methodobject.h
+-rw-r--r-- 1 sibarra sibarra  9959 Mar  8 21:22 modsupport.h
+-rw-r--r-- 1 sibarra sibarra  2361 Mar  8 21:22 moduleobject.h
+-rw-r--r-- 1 sibarra sibarra   349 Mar  8 21:22 namespaceobject.h
+-rw-r--r-- 1 sibarra sibarra  1281 Mar  8 21:22 node.h
+-rw-r--r-- 1 sibarra sibarra 24628 Mar  8 21:22 object.h
+-rw-r--r-- 1 sibarra sibarra  8423 Mar  8 21:22 objimpl.h
+-rw-r--r-- 1 sibarra sibarra  1299 Mar  8 21:22 odictobject.h
+-rw-r--r-- 1 sibarra sibarra  4900 Mar  8 21:22 opcode.h
+-rw-r--r-- 1 sibarra sibarra   737 Mar  8 21:22 osdefs.h
+-rw-r--r-- 1 sibarra sibarra   291 Mar  8 21:22 osmodule.h
+-rw-r--r-- 1 sibarra sibarra  2958 Mar  8 21:22 parsetok.h
+-rw-r--r-- 1 sibarra sibarra  1297 Mar  8 21:22 patchlevel.h
+-rw-r--r-- 1 sibarra sibarra   846 Mar  8 21:22 picklebufobject.h
+-rw-r--r-- 1 sibarra sibarra  2474 Mar  8 21:22 py_curses.h
+-rw-r--r-- 1 sibarra sibarra  2744 Mar  8 21:22 pyarena.h
+-rw-r--r-- 1 sibarra sibarra  1725 Mar  8 21:22 pycapsule.h
+-rw-r--r-- 1 sibarra sibarra 47570 Mar  8 21:22 pyconfig.h
+-rw-r--r-- 1 sibarra sibarra  1320 Mar  8 21:22 pyctype.h
+-rw-r--r-- 1 sibarra sibarra  1093 Mar  8 21:22 pydebug.h
+-rw-r--r-- 1 sibarra sibarra  2413 Mar  8 21:22 pydtrace.h
+-rw-r--r-- 1 sibarra sibarra 12427 Mar  8 21:22 pyerrors.h
+-rw-r--r-- 1 sibarra sibarra  2450 Mar  8 21:22 pyexpat.h
+-rw-r--r-- 1 sibarra sibarra   444 Mar  8 21:22 pyfpe.h
+-rw-r--r-- 1 sibarra sibarra   466 Mar  8 21:22 pyframe.h
+-rw-r--r-- 1 sibarra sibarra  4263 Mar  8 21:22 pyhash.h
+-rw-r--r-- 1 sibarra sibarra  2081 Mar  8 21:22 pylifecycle.h
+-rw-r--r-- 1 sibarra sibarra  2989 Mar  8 21:22 pymacconfig.h
+-rw-r--r-- 1 sibarra sibarra  4920 Mar  8 21:22 pymacro.h
+-rw-r--r-- 1 sibarra sibarra  8580 Mar  8 21:22 pymath.h
+-rw-r--r-- 1 sibarra sibarra  4406 Mar  8 21:22 pymem.h
+-rw-r--r-- 1 sibarra sibarra 30982 Mar  8 21:22 pyport.h
+-rw-r--r-- 1 sibarra sibarra  5250 Mar  8 21:22 pystate.h
+-rw-r--r-- 1 sibarra sibarra   436 Mar  8 21:22 pystrcmp.h
+-rw-r--r-- 1 sibarra sibarra   849 Mar  8 21:22 pystrhex.h
+-rw-r--r-- 1 sibarra sibarra  1483 Mar  8 21:22 pystrtod.h
+-rw-r--r-- 1 sibarra sibarra  7673 Mar  8 21:22 pythonrun.h
+-rw-r--r-- 1 sibarra sibarra  5938 Mar  8 21:22 pythread.h
+-rw-r--r-- 1 sibarra sibarra  8926 Mar  8 21:22 pytime.h
+-rw-r--r-- 1 sibarra sibarra   628 Mar  8 21:22 rangeobject.h
+-rw-r--r-- 1 sibarra sibarra  3324 Mar  8 21:22 setobject.h
+-rw-r--r-- 1 sibarra sibarra  2516 Mar  8 21:22 sliceobject.h
+-rw-r--r-- 1 sibarra sibarra  2030 Mar  8 21:22 structmember.h
+-rw-r--r-- 1 sibarra sibarra  1390 Mar  8 21:22 structseq.h
+-rw-r--r-- 1 sibarra sibarra  5307 Mar  8 21:22 symtable.h
+-rw-r--r-- 1 sibarra sibarra  1242 Mar  8 21:22 sysmodule.h
+-rw-r--r-- 1 sibarra sibarra  2642 Mar  8 21:22 token.h
+-rw-r--r-- 1 sibarra sibarra   584 Mar  8 21:22 traceback.h
+-rw-r--r-- 1 sibarra sibarra  1114 Mar  8 21:22 tracemalloc.h
+-rw-r--r-- 1 sibarra sibarra  1614 Mar  8 21:22 tupleobject.h
+-rw-r--r-- 1 sibarra sibarra  2350 Mar  8 21:22 typeslots.h
+-rw-r--r-- 1 sibarra sibarra  1056 Mar  8 21:22 ucnhash.h
+-rw-r--r-- 1 sibarra sibarra 35426 Mar  8 21:22 unicodeobject.h
+-rw-r--r-- 1 sibarra sibarra  1776 Mar  8 21:22 warnings.h
+-rw-r--r-- 1 sibarra sibarra  2863 Mar  8 21:22 weakrefobject.h
+
+/home/sibarra/chimere2020/libs/include/random:
+total 72
+-rw-r--r-- 1 sibarra sibarra  2091 Mar  8 21:25 F.h
+-rw-r--r-- 1 sibarra sibarra  6955 Mar  8 21:25 beta.h
+-rw-r--r-- 1 sibarra sibarra  1142 Mar  8 21:25 chisquare.h
+-rw-r--r-- 1 sibarra sibarra  3762 Mar  8 21:25 default.h
+-rw-r--r-- 1 sibarra sibarra  1953 Mar  8 21:25 discrete-uniform.h
+-rw-r--r-- 1 sibarra sibarra  1611 Mar  8 21:25 exponential.h
+-rw-r--r-- 1 sibarra sibarra  7379 Mar  8 21:25 gamma.h
+-rw-r--r-- 1 sibarra sibarra  9876 Mar  8 21:25 mt.h
+-rw-r--r-- 1 sibarra sibarra  2056 Mar  8 21:25 mtparam.cc
+-rw-r--r-- 1 sibarra sibarra  2851 Mar  8 21:25 normal.h
+-rw-r--r-- 1 sibarra sibarra 13789 Mar  8 21:25 uniform.h
+ 
+----------------------------------------------------------------------------------------------
+                                       netcdf-c
+----------------------------------------------------------------------------------------------
+ 
+-rwxr-xr-x 1 sibarra sibarra 114272 Mar  8 20:45 /home/sibarra/chimere2020/libs/bin/ncdump
+
+This netCDF 4.7.4 has been built with the following features: 
+
+  --cc            -> /home/sibarra/chimere2020/libs/bin/mpicc
+  --cflags        -> -I/home/sibarra/chimere2020/libs/include 
+  --libs          -> -L/home/sibarra/chimere2020/libs/lib -lnetcdf
+  --static        -> -lhdf5_hl -lhdf5 -lm -ldl -lz 
+
+  --has-c++       -> no
+  --cxx           -> 
+
+  --has-c++4      -> no
+  --cxx4          -> 
+
+  --has-fortran   -> yes
+  --fc            -> gfortran
+  --fflags        -> -I/home/sibarra/chimere2020/libs/include -I/home/sibarra/chimere2020/libs/include
+  --flibs         -> -L/home/sibarra/chimere2020/libs/lib -lnetcdff
+  --has-f90       -> 
+  --has-f03       -> yes
+
+  --has-dap       -> no
+  --has-dap2      -> no
+  --has-dap4      -> no
+  --has-nc2       -> yes
+  --has-nc4       -> yes
+  --has-hdf5      -> yes
+  --has-hdf4      -> no
+  --has-logging   -> no
+  --has-pnetcdf   -> no
+  --has-szlib     -> no
+  --has-cdf5      -> yes
+  --has-parallel4 -> yes
+  --has-parallel  -> yes
+
+  --prefix        -> /home/sibarra/chimere2020/libs
+  --includedir    -> /home/sibarra/chimere2020/libs/include
+  --libdir        -> /home/sibarra/chimere2020/libs/lib
+  --version       -> netCDF 4.7.4
+
+ 
+/home/sibarra/chimere2020/libs/lib
+total 164400
+-rw-r--r--  1 sibarra sibarra    32402 Mar  8 21:25 libblitz.a
+-rwxr-xr-x  1 sibarra sibarra      922 Mar  8 21:25 libblitz.la
+-rw-r--r--  1 sibarra sibarra 13923300 Mar  8 21:29 libgrib_api.a
+-rwxr-xr-x  1 sibarra sibarra     1006 Mar  8 21:29 libgrib_api.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so -> libgrib_api.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so.1 -> libgrib_api.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra  6633232 Mar  8 21:29 libgrib_api.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   499906 Mar  8 21:29 libgrib_api_f77.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f77.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so -> libgrib_api_f77.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so.1 -> libgrib_api_f77.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   352552 Mar  8 21:29 libgrib_api_f77.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   762050 Mar  8 21:29 libgrib_api_f90.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f90.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so -> libgrib_api_f90.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so.1 -> libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   478480 Mar  8 21:29 libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra     1081 Mar  8 20:45 libh5bzip2.la
+-rwxr-xr-x  1 sibarra sibarra   110168 Mar  8 20:45 libh5bzip2.so
+-rw-r--r--  1 sibarra sibarra 57499046 Mar  8 20:40 libhdf5.a
+-rwxr-xr-x  1 sibarra sibarra      994 Mar  8 20:40 libhdf5.la
+-rw-r--r--  1 sibarra sibarra     5015 Mar  8 20:40 libhdf5.settings
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so -> libhdf5.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so.200 -> libhdf5.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra 27068064 Mar  8 20:40 libhdf5.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  1136322 Mar  8 20:40 libhdf5_hl.a
+-rwxr-xr-x  1 sibarra sibarra     1061 Mar  8 20:40 libhdf5_hl.la
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so -> libhdf5_hl.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so.200 -> libhdf5_hl.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra   669520 Mar  8 20:40 libhdf5_hl.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  2977000 Mar  8 21:26 libjasper.a
+-rwxr-xr-x  1 sibarra sibarra      771 Mar  8 21:26 libjasper.la
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_dstore.la
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so -> libmca_common_dstore.so.1.0.2
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so.1 -> libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra    79440 Mar  8 20:26 libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra     1101 Mar  8 20:26 libmca_common_monitoring.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so -> libmca_common_monitoring.so.50.20.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so.50 -> libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra    34560 Mar  8 20:26 libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_ompio.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so -> libmca_common_ompio.so.41.29.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so.41 -> libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra    66200 Mar  8 20:26 libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra     1053 Mar  8 20:26 libmca_common_sm.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so -> libmca_common_sm.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so.40 -> libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    14224 Mar  8 20:26 libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1138 Mar  8 20:26 libmca_common_ucx.la
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so -> libmca_common_ucx.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so.40 -> libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    20024 Mar  8 20:26 libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1091 Mar  8 20:26 libmca_common_verbs.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so -> libmca_common_verbs.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so.40 -> libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    24304 Mar  8 20:26 libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1098 Mar  8 20:26 libmpi.la
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so -> libmpi.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so.40 -> libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1410832 Mar  8 20:26 libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1179 Mar  8 20:26 libmpi_mpifh.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so -> libmpi_mpifh.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so.40 -> libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   642408 Mar  8 20:26 libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1152 Mar  8 20:26 libmpi_usempi_ignore_tkr.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so -> libmpi_usempi_ignore_tkr.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40 -> libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    71600 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1250 Mar  8 20:26 libmpi_usempif08.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so -> libmpi_usempif08.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so.40 -> libmpi_usempif08.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   353256 Mar  8 20:26 libmpi_usempif08.so.40.30.0
+-rw-r--r--  1 sibarra sibarra  1576344 Mar  8 20:45 libnetcdf.a
+-rwxr-xr-x  1 sibarra sibarra     1231 Mar  8 20:45 libnetcdf.la
+-rw-r--r--  1 sibarra sibarra     1040 Mar  8 20:45 libnetcdf.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so -> libnetcdf.so.18.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so.18 -> libnetcdf.so.18.0.0
+-rwxr-xr-x  1 sibarra sibarra  1225088 Mar  8 20:45 libnetcdf.so.18.0.0
+-rw-r--r--  1 sibarra sibarra  2435606 Mar  8 20:55 libnetcdff.a
+-rwxr-xr-x  1 sibarra sibarra     1187 Mar  8 20:55 libnetcdff.la
+-rw-r--r--  1 sibarra sibarra     1048 Mar  8 20:55 libnetcdff.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so -> libnetcdff.so.7.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so.7 -> libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra  1659168 Mar  8 20:55 libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra     1029 Mar  8 20:26 libompitrace.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so -> libompitrace.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so.40 -> libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    18880 Mar  8 20:26 libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1028 Mar  8 20:26 libopen-pal.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so -> libopen-pal.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so.40 -> libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1574864 Mar  8 20:26 libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1078 Mar  8 20:26 libopen-rte.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so -> libopen-rte.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so.40 -> libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1024248 Mar  8 20:26 libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1161 Mar  8 20:26 liboshmem.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so -> liboshmem.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so.40 -> liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1080384 Mar  8 20:26 liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra 42275404 Mar  8 21:22 libpython3.9.a
+-rwxr-xr-x  1 sibarra sibarra    95322 Mar  8 20:26 mpi.mod
+-rwxr-xr-x  1 sibarra sibarra     5922 Mar  8 20:26 mpi_ext.mod
+-rwxr-xr-x  1 sibarra sibarra   119410 Mar  8 20:26 mpi_f08.mod
+-rwxr-xr-x  1 sibarra sibarra     1621 Mar  8 20:26 mpi_f08_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra     9935 Mar  8 20:26 mpi_f08_ext.mod
+-rwxr-xr-x  1 sibarra sibarra    50479 Mar  8 20:26 mpi_f08_interfaces.mod
+-rwxr-xr-x  1 sibarra sibarra     1997 Mar  8 20:26 mpi_f08_interfaces_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra    13872 Mar  8 20:26 mpi_f08_types.mod
+-rwxr-xr-x  1 sibarra sibarra     1212 Mar  8 20:26 ompi_monitoring_prof.la
+-rwxr-xr-x  1 sibarra sibarra    23040 Mar  8 20:26 ompi_monitoring_prof.so
+drwxrwxr-x  2 sibarra sibarra     8192 Mar  8 20:26 openmpi
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 21:29 pkgconfig
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 20:26 pmix
+-rwxr-xr-x  1 sibarra sibarra    50550 Mar  8 20:26 pmpi_f08_interfaces.mod
+drwxr-xr-x 36 sibarra sibarra     8192 Mar  8 21:22 python3.9
+ 
+ 
+----------------------------------------------------------------------------------------------
+                                       netcdf-fortran
+----------------------------------------------------------------------------------------------
+ 
+
+This netCDF-Fortran 4.5.3 has been built with the following features: 
+
+  --cc        -> /home/sibarra/chimere2020/libs/bin/mpicc
+  --cflags    -> -I/home/sibarra/chimere2020/libs/include -I/home/sibarra/chimere2020/libs/include
+
+  --fc        -> gfortran
+  --fflags    -> -I/home/sibarra/chimere2020/libs/include -I/home/sibarra/chimere2020/libs/include
+  --flibs     -> -L/home/sibarra/chimere2020/libs/lib -lnetcdff 
+  --has-f90   -> 
+  --has-f03   -> yes
+
+  --has-nc2   -> yes
+  --has-nc4   -> yes
+
+  --prefix    -> /home/sibarra/chimere2020/libs
+  --includedir-> /home/sibarra/chimere2020/libs/include
+  --version   -> netCDF-Fortran 4.5.3
+
+ 
+/home/sibarra/chimere2020/libs/lib
+total 164400
+-rw-r--r--  1 sibarra sibarra    32402 Mar  8 21:25 libblitz.a
+-rwxr-xr-x  1 sibarra sibarra      922 Mar  8 21:25 libblitz.la
+-rw-r--r--  1 sibarra sibarra 13923300 Mar  8 21:29 libgrib_api.a
+-rwxr-xr-x  1 sibarra sibarra     1006 Mar  8 21:29 libgrib_api.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so -> libgrib_api.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so.1 -> libgrib_api.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra  6633232 Mar  8 21:29 libgrib_api.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   499906 Mar  8 21:29 libgrib_api_f77.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f77.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so -> libgrib_api_f77.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so.1 -> libgrib_api_f77.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   352552 Mar  8 21:29 libgrib_api_f77.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   762050 Mar  8 21:29 libgrib_api_f90.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f90.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so -> libgrib_api_f90.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so.1 -> libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   478480 Mar  8 21:29 libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra     1081 Mar  8 20:45 libh5bzip2.la
+-rwxr-xr-x  1 sibarra sibarra   110168 Mar  8 20:45 libh5bzip2.so
+-rw-r--r--  1 sibarra sibarra 57499046 Mar  8 20:40 libhdf5.a
+-rwxr-xr-x  1 sibarra sibarra      994 Mar  8 20:40 libhdf5.la
+-rw-r--r--  1 sibarra sibarra     5015 Mar  8 20:40 libhdf5.settings
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so -> libhdf5.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so.200 -> libhdf5.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra 27068064 Mar  8 20:40 libhdf5.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  1136322 Mar  8 20:40 libhdf5_hl.a
+-rwxr-xr-x  1 sibarra sibarra     1061 Mar  8 20:40 libhdf5_hl.la
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so -> libhdf5_hl.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so.200 -> libhdf5_hl.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra   669520 Mar  8 20:40 libhdf5_hl.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  2977000 Mar  8 21:26 libjasper.a
+-rwxr-xr-x  1 sibarra sibarra      771 Mar  8 21:26 libjasper.la
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_dstore.la
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so -> libmca_common_dstore.so.1.0.2
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so.1 -> libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra    79440 Mar  8 20:26 libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra     1101 Mar  8 20:26 libmca_common_monitoring.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so -> libmca_common_monitoring.so.50.20.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so.50 -> libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra    34560 Mar  8 20:26 libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_ompio.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so -> libmca_common_ompio.so.41.29.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so.41 -> libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra    66200 Mar  8 20:26 libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra     1053 Mar  8 20:26 libmca_common_sm.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so -> libmca_common_sm.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so.40 -> libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    14224 Mar  8 20:26 libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1138 Mar  8 20:26 libmca_common_ucx.la
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so -> libmca_common_ucx.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so.40 -> libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    20024 Mar  8 20:26 libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1091 Mar  8 20:26 libmca_common_verbs.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so -> libmca_common_verbs.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so.40 -> libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    24304 Mar  8 20:26 libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1098 Mar  8 20:26 libmpi.la
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so -> libmpi.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so.40 -> libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1410832 Mar  8 20:26 libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1179 Mar  8 20:26 libmpi_mpifh.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so -> libmpi_mpifh.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so.40 -> libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   642408 Mar  8 20:26 libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1152 Mar  8 20:26 libmpi_usempi_ignore_tkr.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so -> libmpi_usempi_ignore_tkr.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40 -> libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    71600 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1250 Mar  8 20:26 libmpi_usempif08.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so -> libmpi_usempif08.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so.40 -> libmpi_usempif08.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   353256 Mar  8 20:26 libmpi_usempif08.so.40.30.0
+-rw-r--r--  1 sibarra sibarra  1576344 Mar  8 20:45 libnetcdf.a
+-rwxr-xr-x  1 sibarra sibarra     1231 Mar  8 20:45 libnetcdf.la
+-rw-r--r--  1 sibarra sibarra     1040 Mar  8 20:45 libnetcdf.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so -> libnetcdf.so.18.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so.18 -> libnetcdf.so.18.0.0
+-rwxr-xr-x  1 sibarra sibarra  1225088 Mar  8 20:45 libnetcdf.so.18.0.0
+-rw-r--r--  1 sibarra sibarra  2435606 Mar  8 20:55 libnetcdff.a
+-rwxr-xr-x  1 sibarra sibarra     1187 Mar  8 20:55 libnetcdff.la
+-rw-r--r--  1 sibarra sibarra     1048 Mar  8 20:55 libnetcdff.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so -> libnetcdff.so.7.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so.7 -> libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra  1659168 Mar  8 20:55 libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra     1029 Mar  8 20:26 libompitrace.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so -> libompitrace.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so.40 -> libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    18880 Mar  8 20:26 libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1028 Mar  8 20:26 libopen-pal.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so -> libopen-pal.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so.40 -> libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1574864 Mar  8 20:26 libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1078 Mar  8 20:26 libopen-rte.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so -> libopen-rte.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so.40 -> libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1024248 Mar  8 20:26 libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1161 Mar  8 20:26 liboshmem.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so -> liboshmem.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so.40 -> liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1080384 Mar  8 20:26 liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra 42275404 Mar  8 21:22 libpython3.9.a
+-rwxr-xr-x  1 sibarra sibarra    95322 Mar  8 20:26 mpi.mod
+-rwxr-xr-x  1 sibarra sibarra     5922 Mar  8 20:26 mpi_ext.mod
+-rwxr-xr-x  1 sibarra sibarra   119410 Mar  8 20:26 mpi_f08.mod
+-rwxr-xr-x  1 sibarra sibarra     1621 Mar  8 20:26 mpi_f08_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra     9935 Mar  8 20:26 mpi_f08_ext.mod
+-rwxr-xr-x  1 sibarra sibarra    50479 Mar  8 20:26 mpi_f08_interfaces.mod
+-rwxr-xr-x  1 sibarra sibarra     1997 Mar  8 20:26 mpi_f08_interfaces_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra    13872 Mar  8 20:26 mpi_f08_types.mod
+-rwxr-xr-x  1 sibarra sibarra     1212 Mar  8 20:26 ompi_monitoring_prof.la
+-rwxr-xr-x  1 sibarra sibarra    23040 Mar  8 20:26 ompi_monitoring_prof.so
+drwxrwxr-x  2 sibarra sibarra     8192 Mar  8 20:26 openmpi
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 21:29 pkgconfig
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 20:26 pmix
+-rwxr-xr-x  1 sibarra sibarra    50550 Mar  8 20:26 pmpi_f08_interfaces.mod
+drwxr-xr-x 36 sibarra sibarra     8192 Mar  8 21:22 python3.9
+ 
+/home/sibarra/chimere2020/libs/include
+-rw-r--r-- 1 sibarra sibarra 11147 Mar  8 21:29 /home/sibarra/chimere2020/libs/include/grib_api.mod
+-rw-r--r-- 1 sibarra sibarra 61393 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf.inc
+-rw-r--r-- 1 sibarra sibarra 22522 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf.mod
+-rw-r--r-- 1 sibarra sibarra 27215 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_f03.mod
+-rw-r--r-- 1 sibarra sibarra 26865 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra  5559 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra 21971 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_f03.mod
+-rw-r--r-- 1 sibarra sibarra 24967 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_fortv2_c_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra  5821 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nc_data.mod
+-rw-r--r-- 1 sibarra sibarra 21305 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra  9991 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nf_data.mod
+-rw-r--r-- 1 sibarra sibarra 11486 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   502 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/typesizes.mod
+ 
+----------------------------------------------------------------------------------------------
+                                       grib
+----------------------------------------------------------------------------------------------
+ 
+/home/sibarra/chimere2020/libs/lib
+total 164400
+-rw-r--r--  1 sibarra sibarra    32402 Mar  8 21:25 libblitz.a
+-rwxr-xr-x  1 sibarra sibarra      922 Mar  8 21:25 libblitz.la
+-rw-r--r--  1 sibarra sibarra 13923300 Mar  8 21:29 libgrib_api.a
+-rwxr-xr-x  1 sibarra sibarra     1006 Mar  8 21:29 libgrib_api.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so -> libgrib_api.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so.1 -> libgrib_api.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra  6633232 Mar  8 21:29 libgrib_api.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   499906 Mar  8 21:29 libgrib_api_f77.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f77.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so -> libgrib_api_f77.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so.1 -> libgrib_api_f77.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   352552 Mar  8 21:29 libgrib_api_f77.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   762050 Mar  8 21:29 libgrib_api_f90.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f90.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so -> libgrib_api_f90.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so.1 -> libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   478480 Mar  8 21:29 libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra     1081 Mar  8 20:45 libh5bzip2.la
+-rwxr-xr-x  1 sibarra sibarra   110168 Mar  8 20:45 libh5bzip2.so
+-rw-r--r--  1 sibarra sibarra 57499046 Mar  8 20:40 libhdf5.a
+-rwxr-xr-x  1 sibarra sibarra      994 Mar  8 20:40 libhdf5.la
+-rw-r--r--  1 sibarra sibarra     5015 Mar  8 20:40 libhdf5.settings
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so -> libhdf5.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so.200 -> libhdf5.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra 27068064 Mar  8 20:40 libhdf5.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  1136322 Mar  8 20:40 libhdf5_hl.a
+-rwxr-xr-x  1 sibarra sibarra     1061 Mar  8 20:40 libhdf5_hl.la
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so -> libhdf5_hl.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so.200 -> libhdf5_hl.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra   669520 Mar  8 20:40 libhdf5_hl.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  2977000 Mar  8 21:26 libjasper.a
+-rwxr-xr-x  1 sibarra sibarra      771 Mar  8 21:26 libjasper.la
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_dstore.la
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so -> libmca_common_dstore.so.1.0.2
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so.1 -> libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra    79440 Mar  8 20:26 libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra     1101 Mar  8 20:26 libmca_common_monitoring.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so -> libmca_common_monitoring.so.50.20.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so.50 -> libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra    34560 Mar  8 20:26 libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_ompio.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so -> libmca_common_ompio.so.41.29.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so.41 -> libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra    66200 Mar  8 20:26 libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra     1053 Mar  8 20:26 libmca_common_sm.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so -> libmca_common_sm.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so.40 -> libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    14224 Mar  8 20:26 libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1138 Mar  8 20:26 libmca_common_ucx.la
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so -> libmca_common_ucx.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so.40 -> libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    20024 Mar  8 20:26 libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1091 Mar  8 20:26 libmca_common_verbs.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so -> libmca_common_verbs.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so.40 -> libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    24304 Mar  8 20:26 libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1098 Mar  8 20:26 libmpi.la
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so -> libmpi.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so.40 -> libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1410832 Mar  8 20:26 libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1179 Mar  8 20:26 libmpi_mpifh.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so -> libmpi_mpifh.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so.40 -> libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   642408 Mar  8 20:26 libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1152 Mar  8 20:26 libmpi_usempi_ignore_tkr.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so -> libmpi_usempi_ignore_tkr.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40 -> libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    71600 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1250 Mar  8 20:26 libmpi_usempif08.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so -> libmpi_usempif08.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so.40 -> libmpi_usempif08.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   353256 Mar  8 20:26 libmpi_usempif08.so.40.30.0
+-rw-r--r--  1 sibarra sibarra  1576344 Mar  8 20:45 libnetcdf.a
+-rwxr-xr-x  1 sibarra sibarra     1231 Mar  8 20:45 libnetcdf.la
+-rw-r--r--  1 sibarra sibarra     1040 Mar  8 20:45 libnetcdf.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so -> libnetcdf.so.18.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so.18 -> libnetcdf.so.18.0.0
+-rwxr-xr-x  1 sibarra sibarra  1225088 Mar  8 20:45 libnetcdf.so.18.0.0
+-rw-r--r--  1 sibarra sibarra  2435606 Mar  8 20:55 libnetcdff.a
+-rwxr-xr-x  1 sibarra sibarra     1187 Mar  8 20:55 libnetcdff.la
+-rw-r--r--  1 sibarra sibarra     1048 Mar  8 20:55 libnetcdff.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so -> libnetcdff.so.7.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so.7 -> libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra  1659168 Mar  8 20:55 libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra     1029 Mar  8 20:26 libompitrace.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so -> libompitrace.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so.40 -> libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    18880 Mar  8 20:26 libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1028 Mar  8 20:26 libopen-pal.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so -> libopen-pal.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so.40 -> libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1574864 Mar  8 20:26 libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1078 Mar  8 20:26 libopen-rte.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so -> libopen-rte.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so.40 -> libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1024248 Mar  8 20:26 libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1161 Mar  8 20:26 liboshmem.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so -> liboshmem.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so.40 -> liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1080384 Mar  8 20:26 liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra 42275404 Mar  8 21:22 libpython3.9.a
+-rwxr-xr-x  1 sibarra sibarra    95322 Mar  8 20:26 mpi.mod
+-rwxr-xr-x  1 sibarra sibarra     5922 Mar  8 20:26 mpi_ext.mod
+-rwxr-xr-x  1 sibarra sibarra   119410 Mar  8 20:26 mpi_f08.mod
+-rwxr-xr-x  1 sibarra sibarra     1621 Mar  8 20:26 mpi_f08_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra     9935 Mar  8 20:26 mpi_f08_ext.mod
+-rwxr-xr-x  1 sibarra sibarra    50479 Mar  8 20:26 mpi_f08_interfaces.mod
+-rwxr-xr-x  1 sibarra sibarra     1997 Mar  8 20:26 mpi_f08_interfaces_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra    13872 Mar  8 20:26 mpi_f08_types.mod
+-rwxr-xr-x  1 sibarra sibarra     1212 Mar  8 20:26 ompi_monitoring_prof.la
+-rwxr-xr-x  1 sibarra sibarra    23040 Mar  8 20:26 ompi_monitoring_prof.so
+drwxrwxr-x  2 sibarra sibarra     8192 Mar  8 20:26 openmpi
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 21:29 pkgconfig
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 20:26 pmix
+-rwxr-xr-x  1 sibarra sibarra    50550 Mar  8 20:26 pmpi_f08_interfaces.mod
+drwxr-xr-x 36 sibarra sibarra     8192 Mar  8 21:22 python3.9
+ 
+/home/sibarra/chimere2020/libs/include
+-rw-r--r-- 1 sibarra sibarra 11147 Mar  8 21:29 /home/sibarra/chimere2020/libs/include/grib_api.mod
+-rw-r--r-- 1 sibarra sibarra 61393 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf.inc
+-rw-r--r-- 1 sibarra sibarra 22522 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf.mod
+-rw-r--r-- 1 sibarra sibarra 27215 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_f03.mod
+-rw-r--r-- 1 sibarra sibarra 26865 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra  5559 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf4_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra 21971 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_f03.mod
+-rw-r--r-- 1 sibarra sibarra 24967 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_fortv2_c_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra  5821 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nc_data.mod
+-rw-r--r-- 1 sibarra sibarra 21305 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra  9991 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nf_data.mod
+-rw-r--r-- 1 sibarra sibarra 11486 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/netcdf_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   502 Mar  8 20:55 /home/sibarra/chimere2020/libs/include/typesizes.mod
+ 
+----------------------------------------------------------------------------------------------
+                                       jasper
+----------------------------------------------------------------------------------------------
+ 
+/home/sibarra/chimere2020/libs/lib
+total 164400
+-rw-r--r--  1 sibarra sibarra    32402 Mar  8 21:25 libblitz.a
+-rwxr-xr-x  1 sibarra sibarra      922 Mar  8 21:25 libblitz.la
+-rw-r--r--  1 sibarra sibarra 13923300 Mar  8 21:29 libgrib_api.a
+-rwxr-xr-x  1 sibarra sibarra     1006 Mar  8 21:29 libgrib_api.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so -> libgrib_api.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 21:29 libgrib_api.so.1 -> libgrib_api.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra  6633232 Mar  8 21:29 libgrib_api.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   499906 Mar  8 21:29 libgrib_api_f77.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f77.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so -> libgrib_api_f77.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f77.so.1 -> libgrib_api_f77.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   352552 Mar  8 21:29 libgrib_api_f77.so.1.0.0
+-rw-r--r--  1 sibarra sibarra   762050 Mar  8 21:29 libgrib_api_f90.a
+-rwxr-xr-x  1 sibarra sibarra     1034 Mar  8 21:29 libgrib_api_f90.la
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so -> libgrib_api_f90.so.1.0.0
+lrwxrwxrwx  1 sibarra sibarra       24 Mar  8 21:29 libgrib_api_f90.so.1 -> libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra   478480 Mar  8 21:29 libgrib_api_f90.so.1.0.0
+-rwxr-xr-x  1 sibarra sibarra     1081 Mar  8 20:45 libh5bzip2.la
+-rwxr-xr-x  1 sibarra sibarra   110168 Mar  8 20:45 libh5bzip2.so
+-rw-r--r--  1 sibarra sibarra 57499046 Mar  8 20:40 libhdf5.a
+-rwxr-xr-x  1 sibarra sibarra      994 Mar  8 20:40 libhdf5.la
+-rw-r--r--  1 sibarra sibarra     5015 Mar  8 20:40 libhdf5.settings
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so -> libhdf5.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       18 Mar  8 20:40 libhdf5.so.200 -> libhdf5.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra 27068064 Mar  8 20:40 libhdf5.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  1136322 Mar  8 20:40 libhdf5_hl.a
+-rwxr-xr-x  1 sibarra sibarra     1061 Mar  8 20:40 libhdf5_hl.la
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so -> libhdf5_hl.so.200.0.0
+lrwxrwxrwx  1 sibarra sibarra       21 Mar  8 20:40 libhdf5_hl.so.200 -> libhdf5_hl.so.200.0.0
+-rwxr-xr-x  1 sibarra sibarra   669520 Mar  8 20:40 libhdf5_hl.so.200.0.0
+-rw-r--r--  1 sibarra sibarra  2977000 Mar  8 21:26 libjasper.a
+-rwxr-xr-x  1 sibarra sibarra      771 Mar  8 21:26 libjasper.la
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_dstore.la
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so -> libmca_common_dstore.so.1.0.2
+lrwxrwxrwx  1 sibarra sibarra       29 Mar  8 20:26 libmca_common_dstore.so.1 -> libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra    79440 Mar  8 20:26 libmca_common_dstore.so.1.0.2
+-rwxr-xr-x  1 sibarra sibarra     1101 Mar  8 20:26 libmca_common_monitoring.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so -> libmca_common_monitoring.so.50.20.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmca_common_monitoring.so.50 -> libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra    34560 Mar  8 20:26 libmca_common_monitoring.so.50.20.0
+-rwxr-xr-x  1 sibarra sibarra     1071 Mar  8 20:26 libmca_common_ompio.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so -> libmca_common_ompio.so.41.29.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_ompio.so.41 -> libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra    66200 Mar  8 20:26 libmca_common_ompio.so.41.29.0
+-rwxr-xr-x  1 sibarra sibarra     1053 Mar  8 20:26 libmca_common_sm.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so -> libmca_common_sm.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmca_common_sm.so.40 -> libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    14224 Mar  8 20:26 libmca_common_sm.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1138 Mar  8 20:26 libmca_common_ucx.la
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so -> libmca_common_ucx.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       28 Mar  8 20:26 libmca_common_ucx.so.40 -> libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    20024 Mar  8 20:26 libmca_common_ucx.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1091 Mar  8 20:26 libmca_common_verbs.la
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so -> libmca_common_verbs.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       30 Mar  8 20:26 libmca_common_verbs.so.40 -> libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    24304 Mar  8 20:26 libmca_common_verbs.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1098 Mar  8 20:26 libmpi.la
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so -> libmpi.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       17 Mar  8 20:26 libmpi.so.40 -> libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1410832 Mar  8 20:26 libmpi.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1179 Mar  8 20:26 libmpi_mpifh.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so -> libmpi_mpifh.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libmpi_mpifh.so.40 -> libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   642408 Mar  8 20:26 libmpi_mpifh.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1152 Mar  8 20:26 libmpi_usempi_ignore_tkr.la
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so -> libmpi_usempi_ignore_tkr.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       35 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40 -> libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    71600 Mar  8 20:26 libmpi_usempi_ignore_tkr.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1250 Mar  8 20:26 libmpi_usempif08.la
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so -> libmpi_usempif08.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       27 Mar  8 20:26 libmpi_usempif08.so.40 -> libmpi_usempif08.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra   353256 Mar  8 20:26 libmpi_usempif08.so.40.30.0
+-rw-r--r--  1 sibarra sibarra  1576344 Mar  8 20:45 libnetcdf.a
+-rwxr-xr-x  1 sibarra sibarra     1231 Mar  8 20:45 libnetcdf.la
+-rw-r--r--  1 sibarra sibarra     1040 Mar  8 20:45 libnetcdf.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so -> libnetcdf.so.18.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:45 libnetcdf.so.18 -> libnetcdf.so.18.0.0
+-rwxr-xr-x  1 sibarra sibarra  1225088 Mar  8 20:45 libnetcdf.so.18.0.0
+-rw-r--r--  1 sibarra sibarra  2435606 Mar  8 20:55 libnetcdff.a
+-rwxr-xr-x  1 sibarra sibarra     1187 Mar  8 20:55 libnetcdff.la
+-rw-r--r--  1 sibarra sibarra     1048 Mar  8 20:55 libnetcdff.settings
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so -> libnetcdff.so.7.0.0
+lrwxrwxrwx  1 sibarra sibarra       19 Mar  8 20:55 libnetcdff.so.7 -> libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra  1659168 Mar  8 20:55 libnetcdff.so.7.0.0
+-rwxr-xr-x  1 sibarra sibarra     1029 Mar  8 20:26 libompitrace.la
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so -> libompitrace.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       23 Mar  8 20:26 libompitrace.so.40 -> libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra    18880 Mar  8 20:26 libompitrace.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1028 Mar  8 20:26 libopen-pal.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so -> libopen-pal.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-pal.so.40 -> libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1574864 Mar  8 20:26 libopen-pal.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1078 Mar  8 20:26 libopen-rte.la
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so -> libopen-rte.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       22 Mar  8 20:26 libopen-rte.so.40 -> libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1024248 Mar  8 20:26 libopen-rte.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra     1161 Mar  8 20:26 liboshmem.la
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so -> liboshmem.so.40.30.0
+lrwxrwxrwx  1 sibarra sibarra       20 Mar  8 20:26 liboshmem.so.40 -> liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra  1080384 Mar  8 20:26 liboshmem.so.40.30.0
+-rwxr-xr-x  1 sibarra sibarra 42275404 Mar  8 21:22 libpython3.9.a
+-rwxr-xr-x  1 sibarra sibarra    95322 Mar  8 20:26 mpi.mod
+-rwxr-xr-x  1 sibarra sibarra     5922 Mar  8 20:26 mpi_ext.mod
+-rwxr-xr-x  1 sibarra sibarra   119410 Mar  8 20:26 mpi_f08.mod
+-rwxr-xr-x  1 sibarra sibarra     1621 Mar  8 20:26 mpi_f08_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra     9935 Mar  8 20:26 mpi_f08_ext.mod
+-rwxr-xr-x  1 sibarra sibarra    50479 Mar  8 20:26 mpi_f08_interfaces.mod
+-rwxr-xr-x  1 sibarra sibarra     1997 Mar  8 20:26 mpi_f08_interfaces_callbacks.mod
+-rwxr-xr-x  1 sibarra sibarra    13872 Mar  8 20:26 mpi_f08_types.mod
+-rwxr-xr-x  1 sibarra sibarra     1212 Mar  8 20:26 ompi_monitoring_prof.la
+-rwxr-xr-x  1 sibarra sibarra    23040 Mar  8 20:26 ompi_monitoring_prof.so
+drwxrwxr-x  2 sibarra sibarra     8192 Mar  8 20:26 openmpi
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 21:29 pkgconfig
+drwxrwxr-x  2 sibarra sibarra     4096 Mar  8 20:26 pmix
+-rwxr-xr-x  1 sibarra sibarra    50550 Mar  8 20:26 pmpi_f08_interfaces.mod
+drwxr-xr-x 36 sibarra sibarra     8192 Mar  8 21:22 python3.9
+ 
+----------------------------------------------------------------------------------------------
+                                       blitz
+----------------------------------------------------------------------------------------------
+ 
+/home/sibarra/chimere2020/libs/include
+/home/sibarra/chimere2020/libs/include:
+total 1800
+-rw-r--r-- 1 sibarra sibarra  25488 Mar  8 20:40 H5ACpublic.h
+-rw-r--r-- 1 sibarra sibarra   5582 Mar  8 20:40 H5Apublic.h
+-rw-r--r-- 1 sibarra sibarra   1760 Mar  8 20:40 H5Cpublic.h
+-rw-r--r-- 1 sibarra sibarra   1931 Mar  8 20:40 H5DOpublic.h
+-rw-r--r-- 1 sibarra sibarra   2590 Mar  8 20:40 H5DSpublic.h
+-rw-r--r-- 1 sibarra sibarra   9023 Mar  8 20:40 H5Dpublic.h
+-rw-r--r-- 1 sibarra sibarra   1849 Mar  8 20:40 H5ESpublic.h
+-rw-r--r-- 1 sibarra sibarra  22322 Mar  8 20:40 H5Epubgen.h
+-rw-r--r-- 1 sibarra sibarra   9027 Mar  8 20:40 H5Epublic.h
+-rw-r--r-- 1 sibarra sibarra   1490 Mar  8 20:40 H5FDcore.h
+-rw-r--r-- 1 sibarra sibarra   1955 Mar  8 20:40 H5FDdirect.h
+-rw-r--r-- 1 sibarra sibarra   1506 Mar  8 20:40 H5FDfamily.h
+-rw-r--r-- 1 sibarra sibarra   3691 Mar  8 20:40 H5FDhdfs.h
+-rw-r--r-- 1 sibarra sibarra   3322 Mar  8 20:40 H5FDlog.h
+-rw-r--r-- 1 sibarra sibarra   2573 Mar  8 20:40 H5FDmpi.h
+-rw-r--r-- 1 sibarra sibarra   2440 Mar  8 20:40 H5FDmpio.h
+-rw-r--r-- 1 sibarra sibarra   1800 Mar  8 20:40 H5FDmulti.h
+-rw-r--r-- 1 sibarra sibarra  17115 Mar  8 20:40 H5FDpublic.h
+-rw-r--r-- 1 sibarra sibarra   3330 Mar  8 20:40 H5FDros3.h
+-rw-r--r-- 1 sibarra sibarra   1339 Mar  8 20:40 H5FDsec2.h
+-rw-r--r-- 1 sibarra sibarra   1368 Mar  8 20:40 H5FDstdio.h
+-rw-r--r-- 1 sibarra sibarra   1414 Mar  8 20:40 H5FDwindows.h
+-rw-r--r-- 1 sibarra sibarra  15294 Mar  8 20:40 H5Fpublic.h
+-rw-r--r-- 1 sibarra sibarra   7234 Mar  8 20:40 H5Gpublic.h
+-rw-r--r-- 1 sibarra sibarra   3274 Mar  8 20:40 H5IMpublic.h
+-rw-r--r-- 1 sibarra sibarra   5144 Mar  8 20:40 H5Ipublic.h
+-rw-r--r-- 1 sibarra sibarra   1362 Mar  8 20:40 H5LDpublic.h
+-rw-r--r-- 1 sibarra sibarra  14182 Mar  8 20:40 H5LTpublic.h
+-rw-r--r-- 1 sibarra sibarra  12358 Mar  8 20:40 H5Lpublic.h
+-rw-r--r-- 1 sibarra sibarra   1775 Mar  8 20:40 H5MMpublic.h
+-rw-r--r-- 1 sibarra sibarra   4750 Mar  8 20:40 H5Mpublic.h
+-rw-r--r-- 1 sibarra sibarra  15911 Mar  8 20:40 H5Opublic.h
+-rw-r--r-- 1 sibarra sibarra   1528 Mar  8 20:40 H5PLextern.h
+-rw-r--r-- 1 sibarra sibarra   2504 Mar  8 20:40 H5PLpublic.h
+-rw-r--r-- 1 sibarra sibarra   3861 Mar  8 20:40 H5PTpublic.h
+-rw-r--r-- 1 sibarra sibarra  30881 Mar  8 20:40 H5Ppublic.h
+-rw-r--r-- 1 sibarra sibarra   5989 Mar  8 20:40 H5Rpublic.h
+-rw-r--r-- 1 sibarra sibarra  10356 Mar  8 20:40 H5Spublic.h
+-rw-r--r-- 1 sibarra sibarra   8419 Mar  8 20:40 H5TBpublic.h
+-rw-r--r-- 1 sibarra sibarra  27421 Mar  8 20:40 H5Tpublic.h
+-rw-r--r-- 1 sibarra sibarra  26272 Mar  8 20:40 H5VLconnector.h
+-rw-r--r-- 1 sibarra sibarra  13372 Mar  8 20:40 H5VLconnector_passthru.h
+-rw-r--r-- 1 sibarra sibarra   7560 Mar  8 20:40 H5VLnative.h
+-rw-r--r-- 1 sibarra sibarra   1811 Mar  8 20:40 H5VLpassthru.h
+-rw-r--r-- 1 sibarra sibarra   3317 Mar  8 20:40 H5VLpublic.h
+-rw-r--r-- 1 sibarra sibarra  11246 Mar  8 20:40 H5Zpublic.h
+-rw-r--r-- 1 sibarra sibarra   9720 Mar  8 20:40 H5api_adpt.h
+-rw-r--r-- 1 sibarra sibarra 151496 Mar  8 20:40 H5overflow.h
+-rw-r--r-- 1 sibarra sibarra  20838 Mar  8 20:40 H5pubconf.h
+-rw-r--r-- 1 sibarra sibarra  12773 Mar  8 20:40 H5public.h
+-rw-r--r-- 1 sibarra sibarra  29221 Mar  8 20:40 H5version.h
+drwxrwxr-x 5 sibarra sibarra   4096 Mar  8 21:25 blitz
+-rw-r--r-- 1 sibarra sibarra  60542 Mar  8 21:29 grib_api.h
+-rw-r--r-- 1 sibarra sibarra  11147 Mar  8 21:29 grib_api.mod
+-rw-r--r-- 1 sibarra sibarra   3554 Mar  8 21:29 grib_api_f77.h
+-rw-r--r-- 1 sibarra sibarra    743 Mar  8 21:29 grib_api_version.h
+-rw-r--r-- 1 sibarra sibarra    573 Mar  8 21:29 grib_api_windef.h
+-rw-r--r-- 1 sibarra sibarra   3828 Mar  8 20:40 hdf5.h
+-rw-r--r-- 1 sibarra sibarra   1543 Mar  8 20:40 hdf5_hl.h
+drwxrwxr-x 2 sibarra sibarra   4096 Mar  8 21:26 jasper
+-rw-r--r-- 1 sibarra sibarra    597 Mar  8 20:26 mpi-ext.h
+-rw-r--r-- 1 sibarra sibarra 175790 Mar  8 20:26 mpi.h
+-rw-r--r-- 1 sibarra sibarra  16057 Mar  8 20:26 mpi_portable_platform.h
+-rw-r--r-- 1 sibarra sibarra   1796 Mar  8 20:26 mpif-c-constants-decl.h
+-rw-r--r-- 1 sibarra sibarra   2750 Mar  8 20:26 mpif-config.h
+-rw-r--r-- 1 sibarra sibarra  13316 Mar  8 20:26 mpif-constants.h
+-rw-r--r-- 1 sibarra sibarra    683 Mar  8 20:26 mpif-ext.h
+-rw-r--r-- 1 sibarra sibarra   1954 Mar  8 20:26 mpif-externals.h
+-rw-r--r-- 1 sibarra sibarra   8054 Mar  8 20:26 mpif-handles.h
+-rw-r--r-- 1 sibarra sibarra   2122 Mar  8 20:26 mpif-io-constants.h
+-rw-r--r-- 1 sibarra sibarra   1207 Mar  8 20:26 mpif-io-handles.h
+-rw-r--r-- 1 sibarra sibarra   3000 Mar  8 20:26 mpif-sentinels.h
+-rw-r--r-- 1 sibarra sibarra 105706 Mar  8 20:26 mpif-sizeof.h
+-rw-r--r-- 1 sibarra sibarra   2857 Mar  8 20:26 mpif.h
+drwxrwxr-x 2 sibarra sibarra     49 Mar  8 20:26 mpp
+-rw-r--r-- 1 sibarra sibarra  68231 Mar  8 20:45 netcdf.h
+-rw-r--r-- 1 sibarra sibarra  61393 Mar  8 20:55 netcdf.inc
+-rw-r--r-- 1 sibarra sibarra  22522 Mar  8 20:55 netcdf.mod
+-rw-r--r-- 1 sibarra sibarra  27215 Mar  8 20:55 netcdf4_f03.mod
+-rw-r--r-- 1 sibarra sibarra  26865 Mar  8 20:55 netcdf4_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   5559 Mar  8 20:55 netcdf4_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1703 Mar  8 20:45 netcdf_aux.h
+-rw-r--r-- 1 sibarra sibarra  12058 Mar  8 20:45 netcdf_dispatch.h
+-rw-r--r-- 1 sibarra sibarra  21971 Mar  8 20:55 netcdf_f03.mod
+-rw-r--r-- 1 sibarra sibarra   3847 Mar  8 20:45 netcdf_filter.h
+-rw-r--r-- 1 sibarra sibarra  24967 Mar  8 20:55 netcdf_fortv2_c_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1337 Mar  8 20:45 netcdf_mem.h
+-rw-r--r-- 1 sibarra sibarra   2597 Mar  8 20:45 netcdf_meta.h
+-rw-r--r-- 1 sibarra sibarra   5821 Mar  8 20:55 netcdf_nc_data.mod
+-rw-r--r-- 1 sibarra sibarra  21305 Mar  8 20:55 netcdf_nc_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   9991 Mar  8 20:55 netcdf_nf_data.mod
+-rw-r--r-- 1 sibarra sibarra  11486 Mar  8 20:55 netcdf_nf_interfaces.mod
+-rw-r--r-- 1 sibarra sibarra   1636 Mar  8 20:45 netcdf_par.h
+drwxrwxr-x 3 sibarra sibarra     28 Mar  8 20:26 openmpi
+drwxrwxr-x 3 sibarra sibarra     55 Mar  8 20:26 openshmem
+-rw-r--r-- 1 sibarra sibarra 136521 Mar  8 20:26 pshmem.h
+-rw-r--r-- 1 sibarra sibarra  12251 Mar  8 20:26 pshmemx.h
+drwxr-xr-x 4 sibarra sibarra   4096 Mar  8 21:22 python3.9
+drwxrwxr-x 2 sibarra sibarra    240 Mar  8 21:25 random
+-rw-r--r-- 1 sibarra sibarra   1025 Mar  8 20:26 shmem-compat.h
+-rw-r--r-- 1 sibarra sibarra   1723 Mar  8 20:26 shmem.fh
+-rw-r--r-- 1 sibarra sibarra 137992 Mar  8 20:26 shmem.h
+-rw-r--r-- 1 sibarra sibarra  12771 Mar  8 20:26 shmemx.h
+-rw-r--r-- 1 sibarra sibarra    502 Mar  8 20:55 typesizes.mod
+
+/home/sibarra/chimere2020/libs/include/blitz:
+total 560
+drwxrwxr-x 2 sibarra sibarra  4096 Mar  8 21:25 array
+-rw-r--r-- 1 sibarra sibarra 97857 Mar  8 21:25 array-impl.h
+-rw-r--r-- 1 sibarra sibarra  1321 Mar  8 21:25 array.cc
+-rw-r--r-- 1 sibarra sibarra  1418 Mar  8 21:25 array.h
+-rw-r--r-- 1 sibarra sibarra  7429 Mar  8 21:25 bench.cc
+-rw-r--r-- 1 sibarra sibarra  3762 Mar  8 21:25 bench.h
+-rw-r--r-- 1 sibarra sibarra 13864 Mar  8 21:25 benchext.cc
+-rw-r--r-- 1 sibarra sibarra  4095 Mar  8 21:25 benchext.h
+-rw-r--r-- 1 sibarra sibarra  6432 Mar  8 21:25 blitz.h
+-rw-r--r-- 1 sibarra sibarra  3417 Mar  8 21:25 bounds.h
+-rw-r--r-- 1 sibarra sibarra  2812 Mar  8 21:25 bzconfig.h
+-rw-r--r-- 1 sibarra sibarra  7740 Mar  8 21:25 bzdebug.h
+-rw-r--r-- 1 sibarra sibarra  4251 Mar  8 21:25 compiler.h
+-rw-r--r-- 1 sibarra sibarra   588 Mar  8 21:25 constpointerstack.h
+-rw-r--r-- 1 sibarra sibarra  2334 Mar  8 21:25 et-forward.h
+-rw-r--r-- 1 sibarra sibarra  1730 Mar  8 21:25 etbase.h
+-rw-r--r-- 1 sibarra sibarra 31046 Mar  8 21:25 funcs.h
+-rw-r--r-- 1 sibarra sibarra 47181 Mar  8 21:25 globeval.cc
+drwxrwxr-x 2 sibarra sibarra    32 Mar  8 21:25 gnu
+-rw-r--r-- 1 sibarra sibarra  9093 Mar  8 21:25 indexexpr.h
+-rw-r--r-- 1 sibarra sibarra    79 Mar  8 21:25 indexmap-forward.h
+-rw-r--r-- 1 sibarra sibarra  4968 Mar  8 21:25 levicivita.h
+-rw-r--r-- 1 sibarra sibarra 14192 Mar  8 21:25 limits-hack.h
+-rw-r--r-- 1 sibarra sibarra  3062 Mar  8 21:25 listinit.h
+-rw-r--r-- 1 sibarra sibarra  4989 Mar  8 21:25 memblock.cc
+-rw-r--r-- 1 sibarra sibarra 15287 Mar  8 21:25 memblock.h
+drwxrwxr-x 2 sibarra sibarra   173 Mar  8 21:25 meta
+-rw-r--r-- 1 sibarra sibarra  1922 Mar  8 21:25 minmax.h
+-rw-r--r-- 1 sibarra sibarra  6843 Mar  8 21:25 numinquire.h
+-rw-r--r-- 1 sibarra sibarra  3861 Mar  8 21:25 numtrait.h
+-rw-r--r-- 1 sibarra sibarra  8871 Mar  8 21:25 ops.h
+-rw-r--r-- 1 sibarra sibarra  2239 Mar  8 21:25 prettyprint.h
+-rw-r--r-- 1 sibarra sibarra  5462 Mar  8 21:25 promote.h
+-rw-r--r-- 1 sibarra sibarra   659 Mar  8 21:25 range.cc
+-rw-r--r-- 1 sibarra sibarra  9599 Mar  8 21:25 range.h
+-rw-r--r-- 1 sibarra sibarra   973 Mar  8 21:25 ranks.h
+-rw-r--r-- 1 sibarra sibarra 11987 Mar  8 21:25 reduce.h
+-rw-r--r-- 1 sibarra sibarra  2607 Mar  8 21:25 shapecheck.h
+-rw-r--r-- 1 sibarra sibarra  2541 Mar  8 21:25 simdtypes.h
+-rw-r--r-- 1 sibarra sibarra  1898 Mar  8 21:25 tau.h
+-rw-r--r-- 1 sibarra sibarra  4423 Mar  8 21:25 timer.h
+-rw-r--r-- 1 sibarra sibarra  4221 Mar  8 21:25 tinymat2.cc
+-rw-r--r-- 1 sibarra sibarra 11136 Mar  8 21:25 tinymat2.h
+-rw-r--r-- 1 sibarra sibarra  3175 Mar  8 21:25 tinymat2io.cc
+-rw-r--r-- 1 sibarra sibarra  4106 Mar  8 21:25 tinyvec2.cc
+-rw-r--r-- 1 sibarra sibarra 13098 Mar  8 21:25 tinyvec2.h
+-rw-r--r-- 1 sibarra sibarra  2874 Mar  8 21:25 tinyvec2io.cc
+-rw-r--r-- 1 sibarra sibarra 13911 Mar  8 21:25 tm2fastiter.h
+-rw-r--r-- 1 sibarra sibarra  6784 Mar  8 21:25 tmevaluate.h
+-rw-r--r-- 1 sibarra sibarra  3943 Mar  8 21:25 traversal.cc
+-rw-r--r-- 1 sibarra sibarra  3998 Mar  8 21:25 traversal.h
+-rw-r--r-- 1 sibarra sibarra  4810 Mar  8 21:25 tuning.h
+-rw-r--r-- 1 sibarra sibarra 14194 Mar  8 21:25 tv2fastiter.h
+-rw-r--r-- 1 sibarra sibarra  1808 Mar  8 21:25 tvcross.h
+-rw-r--r-- 1 sibarra sibarra  2849 Mar  8 21:25 tvecglobs.h
+-rw-r--r-- 1 sibarra sibarra  6885 Mar  8 21:25 tvevaluate.h
+-rw-r--r-- 1 sibarra sibarra  2751 Mar  8 21:25 update.h
+-rw-r--r-- 1 sibarra sibarra  3716 Mar  8 21:15 vector2.h
+-rw-r--r-- 1 sibarra sibarra   138 Mar  8 21:25 wrap-climits.h
+
+/home/sibarra/chimere2020/libs/include/blitz/array:
+total 1540
+-rw-r--r-- 1 sibarra sibarra   2825 Mar  8 21:25 asexpr.cc
+-rw-r--r-- 1 sibarra sibarra   9327 Mar  8 21:25 asexpr.h
+-rw-r--r-- 1 sibarra sibarra  10446 Mar  8 21:25 cartesian.h
+-rw-r--r-- 1 sibarra sibarra   4295 Mar  8 21:25 cgsolve.h
+-rw-r--r-- 1 sibarra sibarra   1858 Mar  8 21:25 complex.cc
+-rw-r--r-- 1 sibarra sibarra   1939 Mar  8 21:25 convolve.cc
+-rw-r--r-- 1 sibarra sibarra   1558 Mar  8 21:25 convolve.h
+-rw-r--r-- 1 sibarra sibarra   2528 Mar  8 21:25 cycle.cc
+-rw-r--r-- 1 sibarra sibarra   5079 Mar  8 21:25 domain.h
+-rw-r--r-- 1 sibarra sibarra   1635 Mar  8 21:25 et.h
+-rw-r--r-- 1 sibarra sibarra    289 Mar  8 21:25 expr.cc
+-rw-r--r-- 1 sibarra sibarra  73236 Mar  8 21:25 expr.h
+-rw-r--r-- 1 sibarra sibarra  14134 Mar  8 21:25 fastiter.h
+-rw-r--r-- 1 sibarra sibarra  12200 Mar  8 21:25 funcs.h
+-rw-r--r-- 1 sibarra sibarra  64670 Mar  8 21:25 functorExpr.h
+-rw-r--r-- 1 sibarra sibarra   2844 Mar  8 21:25 geometry.h
+-rw-r--r-- 1 sibarra sibarra  23449 Mar  8 21:25 indirect.h
+-rw-r--r-- 1 sibarra sibarra  18287 Mar  8 21:25 interlace.cc
+-rw-r--r-- 1 sibarra sibarra   6235 Mar  8 21:25 io.cc
+-rw-r--r-- 1 sibarra sibarra   9303 Mar  8 21:25 iter.h
+-rw-r--r-- 1 sibarra sibarra  25263 Mar  8 21:25 map.h
+-rw-r--r-- 1 sibarra sibarra  15550 Mar  8 21:25 methods.cc
+-rw-r--r-- 1 sibarra sibarra   4474 Mar  8 21:25 misc.cc
+-rw-r--r-- 1 sibarra sibarra   3152 Mar  8 21:25 multi.h
+-rw-r--r-- 1 sibarra sibarra  23304 Mar  8 21:25 newet-macros.h
+-rw-r--r-- 1 sibarra sibarra   1516 Mar  8 21:25 newet.h
+-rw-r--r-- 1 sibarra sibarra  13368 Mar  8 21:25 ops.cc
+-rw-r--r-- 1 sibarra sibarra   5890 Mar  8 21:25 ops.h
+-rw-r--r-- 1 sibarra sibarra   4869 Mar  8 21:25 reduce.cc
+-rw-r--r-- 1 sibarra sibarra  15993 Mar  8 21:25 reduce.h
+-rw-r--r-- 1 sibarra sibarra  35947 Mar  8 21:25 resize.cc
+-rw-r--r-- 1 sibarra sibarra   3066 Mar  8 21:25 shape.h
+-rw-r--r-- 1 sibarra sibarra   4512 Mar  8 21:25 slice.h
+-rw-r--r-- 1 sibarra sibarra  11123 Mar  8 21:25 slicing.cc
+-rw-r--r-- 1 sibarra sibarra 881754 Mar  8 21:25 stencil-classes.cc
+-rw-r--r-- 1 sibarra sibarra  54658 Mar  8 21:25 stencil-et-macros.h
+-rw-r--r-- 1 sibarra sibarra  11072 Mar  8 21:25 stencil-et.h
+-rw-r--r-- 1 sibarra sibarra  42598 Mar  8 21:25 stencilops.h
+-rw-r--r-- 1 sibarra sibarra  23485 Mar  8 21:25 stencils.cc
+-rw-r--r-- 1 sibarra sibarra  10359 Mar  8 21:25 stencils.h
+-rw-r--r-- 1 sibarra sibarra  14309 Mar  8 21:25 storage.h
+-rw-r--r-- 1 sibarra sibarra  15231 Mar  8 21:25 where.h
+-rw-r--r-- 1 sibarra sibarra   2591 Mar  8 21:25 zip.h
+
+/home/sibarra/chimere2020/libs/include/blitz/gnu:
+total 12
+-rw-r--r-- 1 sibarra sibarra 11725 Mar  8 21:25 bzconfig.h
+
+/home/sibarra/chimere2020/libs/include/blitz/meta:
+total 44
+-rw-r--r-- 1 sibarra sibarra 5641 Mar  8 21:25 dot.h
+-rw-r--r-- 1 sibarra sibarra 2614 Mar  8 21:25 matassign.h
+-rw-r--r-- 1 sibarra sibarra 4354 Mar  8 21:25 matmat.h
+-rw-r--r-- 1 sibarra sibarra 5936 Mar  8 21:25 matvec.h
+-rw-r--r-- 1 sibarra sibarra 1841 Mar  8 21:25 metaprog.h
+-rw-r--r-- 1 sibarra sibarra 2535 Mar  8 21:25 product.h
+-rw-r--r-- 1 sibarra sibarra 2438 Mar  8 21:25 sum.h
+-rw-r--r-- 1 sibarra sibarra 3194 Mar  8 21:25 vecassign.h
+
+/home/sibarra/chimere2020/libs/include/jasper:
+total 172
+-rw-r--r-- 1 sibarra sibarra  8058 Mar  8 21:26 jas_cm.h
+-rw-r--r-- 1 sibarra sibarra  4751 Mar  8 21:26 jas_config.h
+-rw-r--r-- 1 sibarra sibarra  3706 Mar  8 21:26 jas_config2.h
+-rw-r--r-- 1 sibarra sibarra  4238 Mar  8 21:26 jas_debug.h
+-rw-r--r-- 1 sibarra sibarra 13264 Mar  8 21:26 jas_fix.h
+-rw-r--r-- 1 sibarra sibarra  4626 Mar  8 21:26 jas_getopt.h
+-rw-r--r-- 1 sibarra sibarra 15305 Mar  8 21:26 jas_icc.h
+-rw-r--r-- 1 sibarra sibarra 18602 Mar  8 21:26 jas_image.h
+-rw-r--r-- 1 sibarra sibarra  3415 Mar  8 21:26 jas_init.h
+-rw-r--r-- 1 sibarra sibarra  4550 Mar  8 21:26 jas_malloc.h
+-rw-r--r-- 1 sibarra sibarra  4353 Mar  8 21:26 jas_math.h
+-rw-r--r-- 1 sibarra sibarra 10185 Mar  8 21:26 jas_seq.h
+-rw-r--r-- 1 sibarra sibarra 14825 Mar  8 21:26 jas_stream.h
+-rw-r--r-- 1 sibarra sibarra  3763 Mar  8 21:26 jas_string.h
+-rw-r--r-- 1 sibarra sibarra  3621 Mar  8 21:26 jas_tmr.h
+-rw-r--r-- 1 sibarra sibarra  5271 Mar  8 21:26 jas_tvp.h
+-rw-r--r-- 1 sibarra sibarra  6676 Mar  8 21:26 jas_types.h
+-rw-r--r-- 1 sibarra sibarra  4867 Mar  8 21:26 jas_version.h
+-rw-r--r-- 1 sibarra sibarra  3697 Mar  8 21:26 jasper.h
+
+/home/sibarra/chimere2020/libs/include/mpp:
+total 0
+lrwxrwxrwx 1 sibarra sibarra 11 Mar  8 20:26 shmem.fh -> ../shmem.fh
+lrwxrwxrwx 1 sibarra sibarra 10 Mar  8 20:26 shmem.h -> ../shmem.h
+
+/home/sibarra/chimere2020/libs/include/openmpi:
+total 0
+drwxrwxr-x 2 sibarra sibarra 166 Mar  8 20:26 mpiext
+
+/home/sibarra/chimere2020/libs/include/openmpi/mpiext:
+total 36
+-rw-r--r-- 1 sibarra sibarra  776 Mar  8 20:26 mpiext_affinity_c.h
+-rw-r--r-- 1 sibarra sibarra  575 Mar  8 20:26 mpiext_cuda_c.h
+-rw-r--r-- 1 sibarra sibarra 9587 Mar  8 20:26 mpiext_pcollreq_c.h
+-rw-r--r-- 1 sibarra sibarra  476 Mar  8 20:26 mpiext_pcollreq_mpifh.h
+-rw-r--r-- 1 sibarra sibarra 9587 Mar  8 20:26 pmpiext_pcollreq_c.h
+
+/home/sibarra/chimere2020/libs/include/openshmem:
+total 4
+drwxrwxr-x 2 sibarra sibarra   97 Mar  8 20:26 oshmem
+-rw-r--r-- 1 sibarra sibarra 2001 Mar  8 20:26 oshmem_config.h
+
+/home/sibarra/chimere2020/libs/include/openshmem/oshmem:
+total 20
+-rw-r--r-- 1 sibarra sibarra 4368 Mar  8 20:26 constants.h
+-rw-r--r-- 1 sibarra sibarra  749 Mar  8 20:26 frameworks.h
+-rw-r--r-- 1 sibarra sibarra  539 Mar  8 20:26 types.h
+-rw-r--r-- 1 sibarra sibarra  744 Mar  8 20:26 version.h
+
+/home/sibarra/chimere2020/libs/include/python3.9:
+total 708
+-rw-r--r-- 1 sibarra sibarra 26193 Mar  8 21:22 Python-ast.h
+-rw-r--r-- 1 sibarra sibarra  3690 Mar  8 21:22 Python.h
+-rw-r--r-- 1 sibarra sibarra 30477 Mar  8 21:22 abstract.h
+-rw-r--r-- 1 sibarra sibarra  1224 Mar  8 21:22 asdl.h
+-rw-r--r-- 1 sibarra sibarra   947 Mar  8 21:22 ast.h
+-rw-r--r-- 1 sibarra sibarra   468 Mar  8 21:22 bitset.h
+-rw-r--r-- 1 sibarra sibarra   264 Mar  8 21:22 bltinmodule.h
+-rw-r--r-- 1 sibarra sibarra   885 Mar  8 21:22 boolobject.h
+-rw-r--r-- 1 sibarra sibarra  1484 Mar  8 21:22 bytearrayobject.h
+-rw-r--r-- 1 sibarra sibarra  3048 Mar  8 21:22 bytesobject.h
+-rw-r--r-- 1 sibarra sibarra   712 Mar  8 21:22 cellobject.h
+-rw-r--r-- 1 sibarra sibarra  5954 Mar  8 21:22 ceval.h
+-rw-r--r-- 1 sibarra sibarra  1657 Mar  8 21:22 classobject.h
+-rw-r--r-- 1 sibarra sibarra   318 Mar  8 21:22 code.h
+-rw-r--r-- 1 sibarra sibarra  6793 Mar  8 21:22 codecs.h
+-rw-r--r-- 1 sibarra sibarra  3778 Mar  8 21:22 compile.h
+-rw-r--r-- 1 sibarra sibarra  1806 Mar  8 21:22 complexobject.h
+-rw-r--r-- 1 sibarra sibarra  1962 Mar  8 21:22 context.h
+drwxr-xr-x 2 sibarra sibarra  4096 Mar  8 21:22 cpython
+-rw-r--r-- 1 sibarra sibarra  9255 Mar  8 21:22 datetime.h
+-rw-r--r-- 1 sibarra sibarra  3019 Mar  8 21:22 descrobject.h
+-rw-r--r-- 1 sibarra sibarra  3715 Mar  8 21:22 dictobject.h
+-rw-r--r-- 1 sibarra sibarra 22469 Mar  8 21:22 dynamic_annotations.h
+-rw-r--r-- 1 sibarra sibarra   253 Mar  8 21:22 enumobject.h
+-rw-r--r-- 1 sibarra sibarra  1624 Mar  8 21:22 errcode.h
+-rw-r--r-- 1 sibarra sibarra  1209 Mar  8 21:22 eval.h
+-rw-r--r-- 1 sibarra sibarra  1098 Mar  8 21:22 exports.h
+-rw-r--r-- 1 sibarra sibarra  1342 Mar  8 21:22 fileobject.h
+-rw-r--r-- 1 sibarra sibarra   597 Mar  8 21:22 fileutils.h
+-rw-r--r-- 1 sibarra sibarra  4360 Mar  8 21:22 floatobject.h
+-rw-r--r-- 1 sibarra sibarra   337 Mar  8 21:22 frameobject.h
+-rw-r--r-- 1 sibarra sibarra  4057 Mar  8 21:22 funcobject.h
+-rw-r--r-- 1 sibarra sibarra   334 Mar  8 21:22 genericaliasobject.h
+-rw-r--r-- 1 sibarra sibarra  3525 Mar  8 21:22 genobject.h
+-rw-r--r-- 1 sibarra sibarra  2118 Mar  8 21:22 graminit.h
+-rw-r--r-- 1 sibarra sibarra  1821 Mar  8 21:22 grammar.h
+-rw-r--r-- 1 sibarra sibarra  3026 Mar  8 21:22 import.h
+drwxr-xr-x 2 sibarra sibarra  4096 Mar  8 21:22 internal
+-rw-r--r-- 1 sibarra sibarra   334 Mar  8 21:22 interpreteridobject.h
+-rw-r--r-- 1 sibarra sibarra   861 Mar  8 21:22 intrcheck.h
+-rw-r--r-- 1 sibarra sibarra   521 Mar  8 21:22 iterobject.h
+-rw-r--r-- 1 sibarra sibarra  1781 Mar  8 21:22 listobject.h
+-rw-r--r-- 1 sibarra sibarra  3799 Mar  8 21:22 longintrepr.h
+-rw-r--r-- 1 sibarra sibarra  9513 Mar  8 21:22 longobject.h
+-rw-r--r-- 1 sibarra sibarra   803 Mar  8 21:22 marshal.h
+-rw-r--r-- 1 sibarra sibarra  2764 Mar  8 21:22 memoryobject.h
+-rw-r--r-- 1 sibarra sibarra  3775 Mar  8 21:22 methodobject.h
+-rw-r--r-- 1 sibarra sibarra  9959 Mar  8 21:22 modsupport.h
+-rw-r--r-- 1 sibarra sibarra  2361 Mar  8 21:22 moduleobject.h
+-rw-r--r-- 1 sibarra sibarra   349 Mar  8 21:22 namespaceobject.h
+-rw-r--r-- 1 sibarra sibarra  1281 Mar  8 21:22 node.h
+-rw-r--r-- 1 sibarra sibarra 24628 Mar  8 21:22 object.h
+-rw-r--r-- 1 sibarra sibarra  8423 Mar  8 21:22 objimpl.h
+-rw-r--r-- 1 sibarra sibarra  1299 Mar  8 21:22 odictobject.h
+-rw-r--r-- 1 sibarra sibarra  4900 Mar  8 21:22 opcode.h
+-rw-r--r-- 1 sibarra sibarra   737 Mar  8 21:22 osdefs.h
+-rw-r--r-- 1 sibarra sibarra   291 Mar  8 21:22 osmodule.h
+-rw-r--r-- 1 sibarra sibarra  2958 Mar  8 21:22 parsetok.h
+-rw-r--r-- 1 sibarra sibarra  1297 Mar  8 21:22 patchlevel.h
+-rw-r--r-- 1 sibarra sibarra   846 Mar  8 21:22 picklebufobject.h
+-rw-r--r-- 1 sibarra sibarra  2474 Mar  8 21:22 py_curses.h
+-rw-r--r-- 1 sibarra sibarra  2744 Mar  8 21:22 pyarena.h
+-rw-r--r-- 1 sibarra sibarra  1725 Mar  8 21:22 pycapsule.h
+-rw-r--r-- 1 sibarra sibarra 47570 Mar  8 21:22 pyconfig.h
+-rw-r--r-- 1 sibarra sibarra  1320 Mar  8 21:22 pyctype.h
+-rw-r--r-- 1 sibarra sibarra  1093 Mar  8 21:22 pydebug.h
+-rw-r--r-- 1 sibarra sibarra  2413 Mar  8 21:22 pydtrace.h
+-rw-r--r-- 1 sibarra sibarra 12427 Mar  8 21:22 pyerrors.h
+-rw-r--r-- 1 sibarra sibarra  2450 Mar  8 21:22 pyexpat.h
+-rw-r--r-- 1 sibarra sibarra   444 Mar  8 21:22 pyfpe.h
+-rw-r--r-- 1 sibarra sibarra   466 Mar  8 21:22 pyframe.h
+-rw-r--r-- 1 sibarra sibarra  4263 Mar  8 21:22 pyhash.h
+-rw-r--r-- 1 sibarra sibarra  2081 Mar  8 21:22 pylifecycle.h
+-rw-r--r-- 1 sibarra sibarra  2989 Mar  8 21:22 pymacconfig.h
+-rw-r--r-- 1 sibarra sibarra  4920 Mar  8 21:22 pymacro.h
+-rw-r--r-- 1 sibarra sibarra  8580 Mar  8 21:22 pymath.h
+-rw-r--r-- 1 sibarra sibarra  4406 Mar  8 21:22 pymem.h
+-rw-r--r-- 1 sibarra sibarra 30982 Mar  8 21:22 pyport.h
+-rw-r--r-- 1 sibarra sibarra  5250 Mar  8 21:22 pystate.h
+-rw-r--r-- 1 sibarra sibarra   436 Mar  8 21:22 pystrcmp.h
+-rw-r--r-- 1 sibarra sibarra   849 Mar  8 21:22 pystrhex.h
+-rw-r--r-- 1 sibarra sibarra  1483 Mar  8 21:22 pystrtod.h
+-rw-r--r-- 1 sibarra sibarra  7673 Mar  8 21:22 pythonrun.h
+-rw-r--r-- 1 sibarra sibarra  5938 Mar  8 21:22 pythread.h
+-rw-r--r-- 1 sibarra sibarra  8926 Mar  8 21:22 pytime.h
+-rw-r--r-- 1 sibarra sibarra   628 Mar  8 21:22 rangeobject.h
+-rw-r--r-- 1 sibarra sibarra  3324 Mar  8 21:22 setobject.h
+-rw-r--r-- 1 sibarra sibarra  2516 Mar  8 21:22 sliceobject.h
+-rw-r--r-- 1 sibarra sibarra  2030 Mar  8 21:22 structmember.h
+-rw-r--r-- 1 sibarra sibarra  1390 Mar  8 21:22 structseq.h
+-rw-r--r-- 1 sibarra sibarra  5307 Mar  8 21:22 symtable.h
+-rw-r--r-- 1 sibarra sibarra  1242 Mar  8 21:22 sysmodule.h
+-rw-r--r-- 1 sibarra sibarra  2642 Mar  8 21:22 token.h
+-rw-r--r-- 1 sibarra sibarra   584 Mar  8 21:22 traceback.h
+-rw-r--r-- 1 sibarra sibarra  1114 Mar  8 21:22 tracemalloc.h
+-rw-r--r-- 1 sibarra sibarra  1614 Mar  8 21:22 tupleobject.h
+-rw-r--r-- 1 sibarra sibarra  2350 Mar  8 21:22 typeslots.h
+-rw-r--r-- 1 sibarra sibarra  1056 Mar  8 21:22 ucnhash.h
+-rw-r--r-- 1 sibarra sibarra 35426 Mar  8 21:22 unicodeobject.h
+-rw-r--r-- 1 sibarra sibarra  1776 Mar  8 21:22 warnings.h
+-rw-r--r-- 1 sibarra sibarra  2863 Mar  8 21:22 weakrefobject.h
+
+/home/sibarra/chimere2020/libs/include/python3.9/cpython:
+total 208
+-rw-r--r-- 1 sibarra sibarra 14202 Mar  8 21:22 abstract.h
+-rw-r--r-- 1 sibarra sibarra   769 Mar  8 21:22 bytearrayobject.h
+-rw-r--r-- 1 sibarra sibarra  4114 Mar  8 21:22 bytesobject.h
+-rw-r--r-- 1 sibarra sibarra  1537 Mar  8 21:22 ceval.h
+-rw-r--r-- 1 sibarra sibarra  6989 Mar  8 21:22 code.h
+-rw-r--r-- 1 sibarra sibarra  3800 Mar  8 21:22 dictobject.h
+-rw-r--r-- 1 sibarra sibarra   951 Mar  8 21:22 fileobject.h
+-rw-r--r-- 1 sibarra sibarra  4004 Mar  8 21:22 fileutils.h
+-rw-r--r-- 1 sibarra sibarra  3059 Mar  8 21:22 frameobject.h
+-rw-r--r-- 1 sibarra sibarra  1473 Mar  8 21:22 import.h
+-rw-r--r-- 1 sibarra sibarra 16979 Mar  8 21:22 initconfig.h
+-rw-r--r-- 1 sibarra sibarra   456 Mar  8 21:22 interpreteridobject.h
+-rw-r--r-- 1 sibarra sibarra  1364 Mar  8 21:22 listobject.h
+-rw-r--r-- 1 sibarra sibarra  1399 Mar  8 21:22 methodobject.h
+-rw-r--r-- 1 sibarra sibarra 19358 Mar  8 21:22 object.h
+-rw-r--r-- 1 sibarra sibarra  4456 Mar  8 21:22 objimpl.h
+-rw-r--r-- 1 sibarra sibarra  5101 Mar  8 21:22 pyerrors.h
+-rw-r--r-- 1 sibarra sibarra  2096 Mar  8 21:22 pylifecycle.h
+-rw-r--r-- 1 sibarra sibarra  3511 Mar  8 21:22 pymem.h
+-rw-r--r-- 1 sibarra sibarra 10167 Mar  8 21:22 pystate.h
+-rw-r--r-- 1 sibarra sibarra   575 Mar  8 21:22 sysmodule.h
+-rw-r--r-- 1 sibarra sibarra   473 Mar  8 21:22 traceback.h
+-rw-r--r-- 1 sibarra sibarra  1036 Mar  8 21:22 tupleobject.h
+-rw-r--r-- 1 sibarra sibarra 45576 Mar  8 21:22 unicodeobject.h
+
+/home/sibarra/chimere2020/libs/include/python3.9/internal:
+total 168
+-rw-r--r-- 1 sibarra sibarra   953 Mar  8 21:22 pegen_interface.h
+-rw-r--r-- 1 sibarra sibarra   479 Mar  8 21:22 pycore_abstract.h
+-rw-r--r-- 1 sibarra sibarra  1126 Mar  8 21:22 pycore_accu.h
+-rw-r--r-- 1 sibarra sibarra 16977 Mar  8 21:22 pycore_atomic.h
+-rw-r--r-- 1 sibarra sibarra  3384 Mar  8 21:22 pycore_bytes_methods.h
+-rw-r--r-- 1 sibarra sibarra  2636 Mar  8 21:22 pycore_byteswap.h
+-rw-r--r-- 1 sibarra sibarra   870 Mar  8 21:22 pycore_call.h
+-rw-r--r-- 1 sibarra sibarra  3930 Mar  8 21:22 pycore_ceval.h
+-rw-r--r-- 1 sibarra sibarra   542 Mar  8 21:22 pycore_code.h
+-rw-r--r-- 1 sibarra sibarra  2809 Mar  8 21:22 pycore_condvar.h
+-rw-r--r-- 1 sibarra sibarra   800 Mar  8 21:22 pycore_context.h
+-rw-r--r-- 1 sibarra sibarra   646 Mar  8 21:22 pycore_dtoa.h
+-rw-r--r-- 1 sibarra sibarra  1254 Mar  8 21:22 pycore_fileutils.h
+-rw-r--r-- 1 sibarra sibarra  6647 Mar  8 21:22 pycore_gc.h
+-rw-r--r-- 1 sibarra sibarra   490 Mar  8 21:22 pycore_getopt.h
+-rw-r--r-- 1 sibarra sibarra  1565 Mar  8 21:22 pycore_gil.h
+-rw-r--r-- 1 sibarra sibarra  3127 Mar  8 21:22 pycore_hamt.h
+-rw-r--r-- 1 sibarra sibarra  4197 Mar  8 21:22 pycore_hashtable.h
+-rw-r--r-- 1 sibarra sibarra   473 Mar  8 21:22 pycore_import.h
+-rw-r--r-- 1 sibarra sibarra  5183 Mar  8 21:22 pycore_initconfig.h
+-rw-r--r-- 1 sibarra sibarra  5270 Mar  8 21:22 pycore_interp.h
+-rw-r--r-- 1 sibarra sibarra  4037 Mar  8 21:22 pycore_object.h
+-rw-r--r-- 1 sibarra sibarra  1936 Mar  8 21:22 pycore_pathconfig.h
+-rw-r--r-- 1 sibarra sibarra  2032 Mar  8 21:22 pycore_pyerrors.h
+-rw-r--r-- 1 sibarra sibarra   206 Mar  8 21:22 pycore_pyhash.h
+-rw-r--r-- 1 sibarra sibarra  3685 Mar  8 21:22 pycore_pylifecycle.h
+-rw-r--r-- 1 sibarra sibarra  3357 Mar  8 21:22 pycore_pymem.h
+-rw-r--r-- 1 sibarra sibarra  3583 Mar  8 21:22 pycore_pystate.h
+-rw-r--r-- 1 sibarra sibarra  4452 Mar  8 21:22 pycore_runtime.h
+-rw-r--r-- 1 sibarra sibarra   548 Mar  8 21:22 pycore_sysmodule.h
+-rw-r--r-- 1 sibarra sibarra  3058 Mar  8 21:22 pycore_traceback.h
+-rw-r--r-- 1 sibarra sibarra   442 Mar  8 21:22 pycore_tupleobject.h
+-rw-r--r-- 1 sibarra sibarra   633 Mar  8 21:22 pycore_warnings.h
+
+/home/sibarra/chimere2020/libs/include/random:
+total 72
+-rw-r--r-- 1 sibarra sibarra  2091 Mar  8 21:25 F.h
+-rw-r--r-- 1 sibarra sibarra  6955 Mar  8 21:25 beta.h
+-rw-r--r-- 1 sibarra sibarra  1142 Mar  8 21:25 chisquare.h
+-rw-r--r-- 1 sibarra sibarra  3762 Mar  8 21:25 default.h
+-rw-r--r-- 1 sibarra sibarra  1953 Mar  8 21:25 discrete-uniform.h
+-rw-r--r-- 1 sibarra sibarra  1611 Mar  8 21:25 exponential.h
+-rw-r--r-- 1 sibarra sibarra  7379 Mar  8 21:25 gamma.h
+-rw-r--r-- 1 sibarra sibarra  9876 Mar  8 21:25 mt.h
+-rw-r--r-- 1 sibarra sibarra  2056 Mar  8 21:25 mtparam.cc
+-rw-r--r-- 1 sibarra sibarra  2851 Mar  8 21:25 normal.h
+-rw-r--r-- 1 sibarra sibarra 13789 Mar  8 21:25 uniform.h
+ 
+----------------------------------------------------------------------------------------------
+                                       LD_LIBRARY_PATH
+----------------------------------------------------------------------------------------------
+ 
+/home/sibarra/chimere2020/libs/lib
+/home/sibarra/chimere2020/libs/lib
+/home/sibarra/chimere2020/libs/lib
+/home/sibarra/chimere2020/libs/lib
+/home/sibarra/chimere2020/libs/lib
+/home/sibarra/chimere2020/libs/lib/openmpi
+/home/sibarra/chimere2020/libs/lib
+/lib
+
+/home/sibarra/chimere2020/libs
+/home/sibarra/chimere2020/libs
+/home/sibarra/chimere2020/libs
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/calcnxx.e:
+	linux-vdso.so.1 (0x00007ffe6d5fb000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000152ea9a15000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000152ea9598000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000152ea9216000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000152ea8fde000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000152ea8dc6000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x0000152ea8b85000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000152ea8965000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000152ea85a2000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000152ea8293000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000152ea806c000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000152ea78b0000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000152ea7699000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000152ea7495000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000152ea7258000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000152ea704a000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000152ea6de6000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000152ea6ac0000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000152ea9c8e000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000152ea6809000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000152ea6502000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000152ea62fa000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000152ea60f6000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/chemprep-distrib.e:
+	linux-vdso.so.1 (0x00007ffc599f9000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x00001500bc198000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x00001500bbd1b000)
+	libm.so.6 => /lib64/libm.so.6 (0x00001500bb999000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x00001500bb761000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00001500bb549000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x00001500bb308000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00001500bb0e8000)
+	libc.so.6 => /lib64/libc.so.6 (0x00001500bad25000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x00001500baa16000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x00001500ba7ef000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x00001500ba033000)
+	libz.so.1 => /lib64/libz.so.1 (0x00001500b9e1c000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00001500b9c18000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x00001500b99db000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x00001500b97cd000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x00001500b9569000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x00001500b9243000)
+	/lib64/ld-linux-x86-64.so.2 (0x00001500bc411000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x00001500b8f8c000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x00001500b8c85000)
+	librt.so.1 => /lib64/librt.so.1 (0x00001500b8a7d000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00001500b8879000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/chemprep-families.e:
+	linux-vdso.so.1 (0x00007fffb7bd1000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x000014608c9fc000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x000014608c57f000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014608c1fd000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x000014608bfc5000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014608bdad000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x000014608bb6c000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014608b94c000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014608b589000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x000014608b27a000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x000014608b053000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x000014608a897000)
+	libz.so.1 => /lib64/libz.so.1 (0x000014608a680000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014608a47c000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x000014608a23f000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x000014608a031000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000146089dcd000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000146089aa7000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014608cc75000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x00001460897f0000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x00001460894e9000)
+	librt.so.1 => /lib64/librt.so.1 (0x00001460892e1000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00001460890dd000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/chimere.e:
+	linux-vdso.so.1 (0x00007ffe3bb83000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000150c9e586000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x0000150c9e1f1000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000150c9dfb4000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000150c9dda6000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000150c9db42000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000150c9d81c000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000150c9d39f000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000150c9d01d000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000150c9cde5000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000150c9cbcd000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x0000150c9c98c000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000150c9c76c000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000150c9c3a9000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000150c9c09a000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000150c9be73000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000150c9b6b7000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000150c9b4a0000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000150c9b29c000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000150c9e7ff000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000150c9afe5000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000150c9acde000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000150c9aad6000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000150c9a8d2000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-calc-hcoord.e:
+	linux-vdso.so.1 (0x00007ffe0b9de000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x000014c537716000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x000014c537299000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014c536f17000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x000014c536cdf000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014c536ac7000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x000014c536886000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014c536666000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014c5362a3000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x000014c535f94000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x000014c535d6d000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x000014c5355b1000)
+	libz.so.1 => /lib64/libz.so.1 (0x000014c53539a000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014c535196000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x000014c534f59000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x000014c534d4b000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x000014c534ae7000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x000014c5347c1000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014c53798f000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x000014c53450a000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x000014c534203000)
+	librt.so.1 => /lib64/librt.so.1 (0x000014c533ffb000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x000014c533df7000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-extract_dms.e:
+	linux-vdso.so.1 (0x00007ffd66fc9000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000147ce2654000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000147ce21d7000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000147ce1e55000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000147ce1c1d000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000147ce1a05000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x0000147ce17c4000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000147ce15a4000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000147ce11e1000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000147ce0ed2000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000147ce0cab000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000147ce04ef000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000147ce02d8000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000147ce00d4000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000147cdfe97000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000147cdfc89000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000147cdfa25000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000147cdf6ff000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000147ce28cd000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000147cdf448000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000147cdf141000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000147cdef39000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000147cded35000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-extract_erod.e:
+	linux-vdso.so.1 (0x00007ffd49bd1000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x000014b34e106000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x000014b34dc89000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014b34d907000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x000014b34d6cf000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014b34d4b7000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x000014b34d276000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014b34d056000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014b34cc93000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x000014b34c984000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x000014b34c75d000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x000014b34bfa1000)
+	libz.so.1 => /lib64/libz.so.1 (0x000014b34bd8a000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014b34bb86000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x000014b34b949000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x000014b34b73b000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x000014b34b4d7000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x000014b34b1b1000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014b34e37f000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x000014b34aefa000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x000014b34abf3000)
+	librt.so.1 => /lib64/librt.so.1 (0x000014b34a9eb000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x000014b34a7e7000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-extract_geog.e:
+	linux-vdso.so.1 (0x00007fff073d0000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x00001460392ea000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000146038e6d000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000146038aeb000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x00001460388b3000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014603869b000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x000014603845a000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014603823a000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000146037e77000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000146037b68000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000146037941000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000146037185000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000146036f6e000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000146036d6a000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000146036b2d000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x000014603691f000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x00001460366bb000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000146036395000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000146039563000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x00001460360de000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000146035dd7000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000146035bcf000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00001460359cb000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-extract_landuse.e:
+	linux-vdso.so.1 (0x00007ffe58763000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x000014ad2a8cb000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x000014ad2a44e000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014ad2a0cc000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x000014ad29e94000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014ad29c7c000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x000014ad29a3b000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014ad2981b000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014ad29458000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x000014ad29149000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x000014ad28f22000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x000014ad28766000)
+	libz.so.1 => /lib64/libz.so.1 (0x000014ad2854f000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014ad2834b000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x000014ad2810e000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x000014ad27f00000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x000014ad27c9c000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x000014ad27976000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014ad2ab44000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x000014ad276bf000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x000014ad273b8000)
+	librt.so.1 => /lib64/librt.so.1 (0x000014ad271b0000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x000014ad26fac000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-extract_mineral.e:
+	linux-vdso.so.1 (0x00007fff7bbe6000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000147fe2e80000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000147fe2a03000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000147fe2681000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000147fe2449000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000147fe2231000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x0000147fe1ff0000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000147fe1dd0000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000147fe1a0d000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000147fe16fe000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000147fe14d7000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000147fe0d1b000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000147fe0b04000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000147fe0900000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000147fe06c3000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000147fe04b5000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000147fe0251000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000147fdff2b000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000147fe30f9000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000147fdfc74000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000147fdf96d000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000147fdf765000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000147fdf561000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-extract_pollen.e:
+	linux-vdso.so.1 (0x00007ffed4f7b000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x000014f946fb4000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x000014f946b37000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014f9467b5000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x000014f94657d000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014f946365000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x000014f946124000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014f945f04000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014f945b41000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x000014f945832000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x000014f94560b000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x000014f944e4f000)
+	libz.so.1 => /lib64/libz.so.1 (0x000014f944c38000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014f944a34000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x000014f9447f7000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x000014f9445e9000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x000014f944385000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x000014f94405f000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014f94722d000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x000014f943da8000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x000014f943aa1000)
+	librt.so.1 => /lib64/librt.so.1 (0x000014f943899000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x000014f943695000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-extract_z0.e:
+	linux-vdso.so.1 (0x00007fff60f81000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x000014cccfcb8000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x000014cccf83b000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014cccf4b9000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x000014cccf281000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014cccf069000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x000014cccee28000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014cccec08000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014ccce845000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x000014ccce536000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x000014ccce30f000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x000014cccdb53000)
+	libz.so.1 => /lib64/libz.so.1 (0x000014cccd93c000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014cccd738000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x000014cccd4fb000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x000014cccd2ed000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x000014cccd089000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x000014ccccd63000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014cccff31000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x000014ccccaac000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x000014cccc7a5000)
+	librt.so.1 => /lib64/librt.so.1 (0x000014cccc59d000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x000014cccc399000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/domains-remap_ef.e:
+	linux-vdso.so.1 (0x00007fff61dfb000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000152b99c07000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000152b9978a000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000152b99408000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000152b991d0000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000152b98fb8000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x0000152b98d77000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000152b98b57000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000152b98794000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000152b98485000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000152b9825e000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000152b97aa2000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000152b9788b000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000152b97687000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000152b9744a000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000152b9723c000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000152b96fd8000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000152b96cb2000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000152b99e80000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000152b969fb000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000152b966f4000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000152b964ec000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000152b962e8000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/prep_bc.e:
+	linux-vdso.so.1 (0x00007fffd2705000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000149dd891a000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000149dd849d000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000149dd811b000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000149dd7ee3000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000149dd7ccb000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x0000149dd7a8a000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000149dd786a000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000149dd74a7000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000149dd7198000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000149dd6f71000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000149dd67b5000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000149dd659e000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000149dd639a000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000149dd615d000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000149dd5f4f000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000149dd5ceb000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000149dd59c5000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000149dd8b93000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000149dd570e000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000149dd5407000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000149dd51ff000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000149dd4ffb000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/prep_chimere.e:
+	linux-vdso.so.1 (0x00007ffcf7fce000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000154e902e8000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000154e8fe6b000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000154e8fae9000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000154e8f8b1000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x0000154e8f699000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x0000154e8f458000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000154e8f238000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000154e8ee75000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000154e8eb66000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000154e8e93f000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000154e8e183000)
+	libz.so.1 => /lib64/libz.so.1 (0x0000154e8df6c000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000154e8dd68000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000154e8db2b000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000154e8d91d000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x0000154e8d6b9000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000154e8d393000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000154e90561000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000154e8d0dc000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000154e8cdd5000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000154e8cbcd000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000154e8c9c9000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/prep_mie.e:
+	linux-vdso.so.1 (0x00007ffcf57d9000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x00001484f8190000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x00001484f7d13000)
+	libm.so.6 => /lib64/libm.so.6 (0x00001484f7991000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x00001484f7759000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00001484f7541000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x00001484f7300000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00001484f70e0000)
+	libc.so.6 => /lib64/libc.so.6 (0x00001484f6d1d000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x00001484f6a0e000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x00001484f67e7000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x00001484f602b000)
+	libz.so.1 => /lib64/libz.so.1 (0x00001484f5e14000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00001484f5c10000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x00001484f59d3000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x00001484f57c5000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x00001484f5561000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x00001484f523b000)
+	/lib64/ld-linux-x86-64.so.2 (0x00001484f8409000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x00001484f4f84000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x00001484f4c7d000)
+	librt.so.1 => /lib64/librt.so.1 (0x00001484f4a75000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00001484f4871000)
+/home/sibarra/chimere2020/chimere_v2020r1/exe_PROD/prepecm.e:
+	linux-vdso.so.1 (0x00007fffdd7e8000)
+	libnetcdff.so.7 => /home/sibarra/chimere2020/libs/lib/libnetcdff.so.7 (0x0000149979a0b000)
+	libgrib_api_f90.so.1 => /home/sibarra/chimere2020/libs/lib/libgrib_api_f90.so.1 (0x00001499797ef000)
+	libgrib_api.so.1 => /home/sibarra/chimere2020/libs/lib/libgrib_api.so.1 (0x000014997946d000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x0000149978ff0000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000149978c6e000)
+	libgomp.so.1 => /lib64/libgomp.so.1 (0x0000149978a36000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x000014997881e000)
+	libquadmath.so.0 => /lib64/libquadmath.so.0 (0x00001499785dd000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00001499783bd000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000149977ffa000)
+	libnetcdf.so.18 => /home/sibarra/chimere2020/libs/lib/libnetcdf.so.18 (0x0000149977ceb000)
+	libhdf5_hl.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5_hl.so.200 (0x0000149977ac4000)
+	libhdf5.so.200 => /home/sibarra/chimere2020/libs/lib/libhdf5.so.200 (0x0000149977308000)
+	libz.so.1 => /lib64/libz.so.1 (0x00001499770f1000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000149976eed000)
+	libmpi_usempif08.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempif08.so.40 (0x0000149976cb0000)
+	libmpi_usempi_ignore_tkr.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_usempi_ignore_tkr.so.40 (0x0000149976aa2000)
+	libmpi_mpifh.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi_mpifh.so.40 (0x000014997683e000)
+	libmpi.so.40 => /home/sibarra/chimere2020/libs/lib/libmpi.so.40 (0x0000149976518000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000149979c84000)
+	libopen-rte.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-rte.so.40 (0x0000149976261000)
+	libopen-pal.so.40 => /home/sibarra/chimere2020/libs/lib/libopen-pal.so.40 (0x0000149975f5a000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000149975d52000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x0000149975b4e000)
